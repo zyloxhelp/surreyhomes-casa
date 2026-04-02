@@ -27,33 +27,9 @@
 <body>
 
 <!-- Netlify Form Detection — DO NOT REMOVE -->
-<form name="consultation-form" netlify netlify-honeypot="bot-field" hidden>
-  <input type="hidden" name="bot-field">
-  <input type="text"  name="name">
-  <input type="email" name="email">
-  <input type="tel"   name="phone">
-  <input type="text"  name="service">
-  <textarea           name="message"></textarea>
-  <input type="text"  name="page">
-</form>
-<form name="modal-consultation" netlify netlify-honeypot="bot-field" hidden>
-  <input type="hidden" name="bot-field">
-  <input type="text"  name="name">
-  <input type="email" name="email">
-  <input type="tel"   name="phone">
-  <input type="text"  name="service">
-  <textarea           name="message"></textarea>
-  <input type="text"  name="page">
-</form>
-<form name="rental-inquiry" netlify netlify-honeypot="bot-field" hidden>
-  <input type="hidden" name="bot-field">
-  <input type="text"  name="name">
-  <input type="email" name="email">
-  <input type="tel"   name="phone">
-  <input type="text"  name="service">
-  <textarea           name="message"></textarea>
-  <input type="text"  name="page">
-</form>
+
+
+
 
 <header id="hdr">
 <div class="h-inner">
@@ -83,7 +59,7 @@
 </div>
 
 
-<section style="position:relative;min-height:340px;display:flex;align-items:center;padding:7rem 0 3.5rem;overflow:hidden;">
+<section style="margin-top:64px;position:relative;min-height:340px;display:flex;align-items:center;padding:7rem 0 3.5rem;overflow:hidden;">
   <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=1200&q=85');background-size:cover;background-position:center;"></div>
   <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,10,30,.88) 0%,rgba(26,26,46,.75) 60%,rgba(26,26,46,.55) 100%);"></div>
   <div class="container" style="position:relative;z-index:2;padding-left:2rem;padding-right:2rem;">
@@ -158,15 +134,7 @@
         <div style="padding:1.25rem;">
           <h3 style="color:#fff;margin-bottom:.6rem;font-size:1rem;">Find a Rental in Vancouver</h3>
           <p style="color:rgba(255,255,255,.6);font-size:.82rem;margin-bottom:1.1rem;line-height:1.6;">Tell me your budget and needs — I'll find available rentals in Vancouver fast. Free for tenants in most cases.</p>
-          <form name="consultation-form" onsubmit="submitForm(event)" style="display:flex;flex-direction:column;gap:.6rem;">
-  <input type="text" placeholder="Your Name *" required style="padding:.6rem .85rem;border-radius:7px;border:1.5px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);color:#fff;font-size:.82rem;outline:none;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(255,255,255,.15)'">
-            <input type="tel" placeholder="Phone *" required style="padding:.6rem .85rem;border-radius:7px;border:1.5px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);color:#fff;font-size:.82rem;outline:none;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(255,255,255,.15)'">
-            <select style="padding:.6rem .85rem;border-radius:7px;border:1.5px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);color:#fff;font-size:.82rem;outline:none;">
-              <option>Condo / Apartment</option><option>Townhouse</option>
-              <option>Basement Suite</option><option>Detached House</option>
-            </select>
-            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;padding:.7rem;font-size:.85rem;">Find Rentals in Vancouver ›</button>
-          </form>
+          
           <a href="tel:+16048971401" style="display:block;text-align:center;color:rgba(255,255,255,.55);font-size:.78rem;margin-top:.85rem;text-decoration:none;">+16048971401</a>
         </div>
       </div>
