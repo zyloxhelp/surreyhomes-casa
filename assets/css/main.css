@@ -311,3 +311,24 @@ section { width:100%; }
   .hero-btns .btn{width:100%;max-width:320px;justify-content:center;}
   .hero-stats{justify-content:center;gap:1.25rem;}
 }
+
+/* ── BANNER CONTENT PADDING FIX ── */
+section[style*="min-height:340px"] .container,
+.page-hero .container {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+@media(max-width:768px){
+  section[style*="min-height:340px"] .container,
+  .page-hero .container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+}
+@media(min-width:1200px){
+  section[style*="min-height:340px"] .container,
+  .page-hero .container {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
