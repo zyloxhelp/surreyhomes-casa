@@ -1,448 +1,790 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Abhirai Arora REALTOR® | Metro Vancouver &amp; Fraser Valley Real Estate</title>
-<meta name="description" content="Find homes for sale and rent in Metro Vancouver and Fraser Valley BC. Licensed REALTOR® Abhirai Arora — expert guidance for buyers, sellers &amp; investors. Free consultation.">
-<meta property="og:title" content="Abhirai Arora REALTOR® | Metro Vancouver &amp; Fraser Valley BC">
-<meta property="og:url" content="https://surreyhomes.casa">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Surrey Homes Real Estate | Find Homes for Sale in Metro Vancouver BC</title>
+<meta name="description" content="Find homes for sale, rentals, and real estate listings in Metro Vancouver and Fraser Valley BC. Licensed REALTOR® Abhirai Arora — free consultation, 45-min response.">
 <link rel="canonical" href="https://surreyhomes.casa">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+/* ════════════════════════════════════════════════
+   REALTOR.CA — EXACT PIXEL PERFECT REPLICA
+   ════════════════════════════════════════════════ */
+:root{
+  --red:#E10020;
+  --red2:#C4001B;
+  --dark:#212121;
+  --text:#484848;
+  --gray:#717171;
+  --gray2:#B0B0B0;
+  --line:#DDDDDD;
+  --bg:#F7F7F7;
+  --white:#FFFFFF;
+  --blue:#1557D0;
+  --green:#008A05;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:'Source Sans 3',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;line-height:1.5}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button,input,select,textarea{font-family:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;width:100%}
+
+/* ── HEADER ─────────────────────────────────── */
+#hdr{
+  position:fixed;top:0;left:0;right:0;z-index:999;
+  background:var(--white);
+  border-bottom:3px solid var(--red);
+  height:62px;
+  box-shadow:0 1px 0 rgba(0,0,0,.06);
+}
+.h-wrap{
+  max-width:1200px;margin:0 auto;padding:0 24px;
+  height:62px;display:flex;align-items:center;
+  justify-content:space-between;gap:12px;
+}
+/* LOGO */
+.logo{
+  font-size:1.55rem;font-weight:900;letter-spacing:-.3px;
+  color:var(--red);line-height:1;flex-shrink:0;
+}
+.logo b{color:var(--dark);font-weight:900}
+
+/* NAV */
+.nav{display:flex;align-items:center;height:62px;gap:0}
+.nav a{
+  height:62px;padding:0 13px;
+  display:flex;align-items:center;
+  font-size:.9rem;font-weight:600;color:var(--text);
+  border-bottom:3px solid transparent;margin-bottom:-3px;
+  transition:color .15s,border-color .15s;white-space:nowrap;
+}
+.nav a:hover{color:var(--red);border-bottom-color:var(--red)}
+.nav .n-cta{
+  height:36px!important;margin-left:8px;border-bottom:none!important;margin-bottom:0!important;
+  background:var(--red);color:var(--white)!important;
+  padding:0 18px!important;border-radius:3px;font-weight:700;
+  transition:background .15s!important;
+}
+.nav .n-cta:hover{background:var(--red2)!important;border-bottom:none!important}
+
+/* HAMBURGER */
+.hbg{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:5px}
+.hbg span{width:22px;height:2px;background:var(--dark);display:block;border-radius:2px;transition:transform .25s,opacity .25s}
+.hbg.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hbg.open span:nth-child(2){opacity:0}
+.hbg.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* MOB NAV */
+.mnav{
+  position:fixed;inset:0;top:62px;background:var(--white);z-index:998;
+  transform:translateX(100%);transition:transform .28s ease;
+  display:flex;flex-direction:column;overflow-y:auto;
+  border-top:1px solid var(--line);
+}
+.mnav.open{transform:translateX(0)}
+.mnav a{padding:15px 24px;font-size:1rem;font-weight:600;color:var(--text);border-bottom:1px solid var(--line)}
+.mnav a:hover{color:var(--red);background:var(--bg)}
+.mnav .mc{background:var(--red);color:var(--white);margin:16px 24px;border-radius:3px;padding:12px 24px;text-align:center;font-weight:700;border:none}
+
+/* ── HERO ─────────────────────────────────────── */
+.hero{
+  margin-top:62px;
+  position:relative;min-height:calc(100vh - 62px);
+  display:flex;align-items:center;justify-content:center;
+  background:#0B1826;overflow:hidden;
+}
+.hero-img{
+  position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=85') center/cover no-repeat;
+  opacity:.42;
+}
+.hero-body{position:relative;z-index:2;width:100%;max-width:660px;padding:0 20px;text-align:center}
+.hero h1{
+  font-size:clamp(1.9rem,4.5vw,2.9rem);
+  font-weight:700;color:var(--white);line-height:1.18;
+  margin-bottom:28px;
+  text-shadow:0 1px 12px rgba(0,0,0,.55);
+}
+
+/* SEARCH BOX — exact realtor.ca white card */
+.s-box{
+  background:var(--white);
+  border-radius:6px;
+  box-shadow:0 6px 32px rgba(0,0,0,.32),0 2px 8px rgba(0,0,0,.18);
+  overflow:hidden;
+}
+.s-tabs{display:flex;border-bottom:1px solid var(--line)}
+.s-tab{
+  flex:1;padding:14px 10px;background:none;border:none;cursor:pointer;
+  font-size:.95rem;font-weight:600;color:var(--gray);
+  border-bottom:3px solid transparent;margin-bottom:-1px;
+  transition:color .15s,border-color .15s;
+}
+.s-tab.on{color:var(--red);border-bottom-color:var(--red)}
+.s-tab:hover:not(.on){color:var(--dark)}
+.s-body{padding:18px 18px 4px}
+.s-row{display:flex;gap:8px;align-items:center}
+.s-input{
+  flex:1;padding:11px 14px;
+  border:1.5px solid var(--line);border-radius:3px;
+  font-size:.95rem;color:var(--dark);outline:none;
+  transition:border-color .15s;
+}
+.s-input:focus{border-color:#484848}
+.s-input::placeholder{color:var(--gray2)}
+.s-go{
+  background:var(--red);color:var(--white);border:none;
+  padding:0 22px;height:44px;border-radius:3px;
+  font-size:.95rem;font-weight:700;cursor:pointer;
+  transition:background .15s;white-space:nowrap;
+}
+.s-go:hover{background:var(--red2)}
+.s-links{
+  display:flex;flex-wrap:wrap;gap:4px 0;
+  padding:12px 18px 16px;align-items:center;
+}
+.s-links span{font-size:.82rem;color:var(--gray);margin-right:8px}
+.s-links a{font-size:.82rem;font-weight:600;color:var(--blue);margin-right:14px}
+.s-links a:hover{text-decoration:underline}
+
+/* ── 4 FEATURE CARDS ─────────────────────────── */
+.feat{background:var(--white);border-bottom:1px solid var(--line)}
+.feat-inner{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-left:1px solid var(--line);
+}
+.fc{
+  padding:26px 22px 22px;border-right:1px solid var(--line);
+  display:block;color:inherit;transition:background .15s;
+}
+.fc:hover{background:var(--bg)}
+.fc-ico{
+  width:42px;height:42px;border-radius:50%;
+  background:#FEECEE;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;margin-bottom:12px;
+}
+.fc h3{font-size:.98rem;font-weight:700;color:var(--dark);margin-bottom:5px}
+.fc p{font-size:.82rem;color:var(--gray);line-height:1.5;margin-bottom:10px}
+.fc-lnk{font-size:.82rem;font-weight:600;color:var(--red)}
+
+/* ── SECTIONS ────────────────────────────────── */
+.sec{padding:40px 0}
+.sec-alt{background:var(--bg)}
+.sec-hd{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.sec-hd h2{font-size:1.45rem;font-weight:700;color:var(--dark)}
+.sec-hd p{font-size:.88rem;color:var(--gray);margin-top:4px}
+.sec-hd-c{text-align:center;justify-content:center;flex-direction:column;align-items:center}
+.see-all{font-size:.88rem;font-weight:600;color:var(--red);white-space:nowrap}
+.see-all:hover{text-decoration:underline}
+
+/* PROPERTY CARDS */
+.pg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pc{
+  background:var(--white);border:1px solid var(--line);
+  border-radius:6px;overflow:hidden;
+  display:block;color:inherit;
+  transition:box-shadow .2s,transform .2s;
+}
+.pc:hover{box-shadow:0 4px 20px rgba(0,0,0,.13);transform:translateY(-2px)}
+.pc-img{position:relative;overflow:hidden}
+.pc-img img{width:100%;height:178px;object-fit:cover;transition:transform .3s}
+.pc:hover .pc-img img{transform:scale(1.04)}
+.pc-badge{
+  position:absolute;top:9px;left:9px;
+  background:var(--red);color:var(--white);
+  font-size:.63rem;font-weight:700;letter-spacing:.4px;text-transform:uppercase;
+  padding:3px 8px;border-radius:3px;
+}
+.pc-play{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:rgba(0,0,0,.22);
+}
+.pc-btn{width:44px;height:44px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);font-size:.95rem}
+.pc-body{padding:13px}
+.pc-price{font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:3px}
+.pc-addr{font-size:.79rem;color:var(--gray);margin-bottom:9px}
+.pc-meta{display:flex;gap:12px;padding-top:9px;border-top:1px solid var(--line)}
+.pc-meta span{font-size:.77rem;color:var(--gray)}
+
+/* AGENT CARD */
+.ag-wrap{
+  display:grid;grid-template-columns:280px 1fr;
+  border:1px solid var(--line);border-radius:6px;
+  overflow:hidden;background:var(--white);
+}
+.ag-photo{overflow:hidden}
+.ag-photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.ag-body{padding:32px 32px 32px}
+.ag-body h2{font-size:1.5rem;font-weight:700;color:var(--dark);margin-bottom:3px}
+.ag-tag{font-size:.78rem;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.8px;margin-bottom:14px}
+.ag-body p{font-size:.9rem;color:var(--gray);line-height:1.65;margin-bottom:14px}
+.ag-checks{display:flex;flex-direction:column;gap:8px;margin-bottom:22px}
+.ag-check{display:flex;align-items:flex-start;gap:8px;font-size:.87rem;color:var(--text)}
+.ag-check::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0;margin-top:1px}
+.btn-r{display:inline-flex;align-items:center;background:var(--red);color:var(--white);padding:10px 22px;border-radius:3px;font-weight:700;font-size:.9rem;transition:background .15s}
+.btn-r:hover{background:var(--red2)}
+.btn-o{display:inline-flex;align-items:center;background:var(--white);color:var(--text);padding:10px 22px;border-radius:3px;border:1.5px solid var(--line);font-weight:600;font-size:.9rem;margin-left:10px;transition:border-color .15s}
+.btn-o:hover{border-color:var(--dark)}
+
+/* STEP CARDS */
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sc{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px}
+.sc-n{width:34px;height:34px;background:var(--red);color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.92rem;font-weight:700;margin-bottom:12px}
+.sc h3{font-size:.93rem;font-weight:700;color:var(--dark);margin-bottom:7px}
+.sc p{font-size:.83rem;color:var(--gray);line-height:1.6}
+
+/* BLOG CARDS */
+.bg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bc{background:var(--white);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:block;color:inherit;transition:box-shadow .2s}
+.bc:hover{box-shadow:0 4px 16px rgba(0,0,0,.1)}
+.bc img{width:100%;height:155px;object-fit:cover}
+.bc-body{padding:15px}
+.bc-cat{font-size:.7rem;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
+.bc-title{font-size:.9rem;font-weight:700;color:var(--dark);line-height:1.35;margin-bottom:7px}
+.bc-exc{font-size:.8rem;color:var(--gray);line-height:1.5}
+
+/* TESTIMONIALS */
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tc{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:20px}
+.tc-stars{color:var(--red);font-size:.88rem;margin-bottom:10px;letter-spacing:.05rem}
+.tc-txt{font-size:.85rem;line-height:1.65;color:var(--text);margin-bottom:13px;font-style:italic}
+.tc-auth{display:flex;align-items:center;gap:9px}
+.tc-av{width:36px;height:36px;border-radius:50%;background:#FEECEE;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:var(--red);flex-shrink:0}
+.tc-name{font-size:.82rem;font-weight:700;color:var(--dark)}
+.tc-role{font-size:.7rem;color:var(--gray2)}
+
+/* FAQ */
+.faq{max-width:720px;margin:0 auto}
+.fi{border-bottom:1px solid var(--line)}
+.fq{display:flex;align-items:center;justify-content:space-between;padding:15px 0;cursor:pointer;gap:14px}
+.fq h3{font-size:.88rem;font-weight:600;color:var(--dark);line-height:1.4}
+.fi-ico{width:22px;height:22px;border:1.5px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:var(--gray);flex-shrink:0;transition:all .15s}
+.fi.op .fi-ico{background:var(--red);border-color:var(--red);color:var(--white);transform:rotate(45deg)}
+.fa{display:none;padding:0 0 15px;font-size:.85rem;color:var(--gray);line-height:1.7}
+.fi.op .fa{display:block}
+
+/* LEAD FORM */
+.lf-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.lf-txt h2{font-size:1.5rem;font-weight:700;color:var(--dark);margin-bottom:12px}
+.lf-txt p{font-size:.9rem;color:var(--gray);line-height:1.65;margin-bottom:16px}
+.lf-checks{display:flex;flex-direction:column;gap:9px}
+.lf-check{display:flex;align-items:flex-start;gap:8px;font-size:.87rem;color:var(--text)}
+.lf-check::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0;margin-top:2px}
+.f-box{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:26px}
+.f-box h3{font-size:.98rem;font-weight:700;color:var(--dark);margin-bottom:14px;padding-bottom:13px;border-bottom:1px solid var(--line)}
+.fg{margin-bottom:12px}
+.fg label{display:block;font-size:.77rem;font-weight:700;color:var(--text);margin-bottom:4px}
+.fg input,.fg select,.fg textarea{width:100%;padding:10px 13px;border:1.5px solid var(--line);border-radius:3px;font-size:.88rem;font-family:inherit;color:var(--dark);outline:none;transition:border-color .15s;background:var(--white)}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--dark)}
+.fg input::placeholder,.fg textarea::placeholder{color:var(--gray2)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fsub{width:100%;padding:11px;background:var(--red);color:var(--white);border:none;border-radius:3px;font-size:.92rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background .15s;margin-top:4px}
+.fsub:hover{background:var(--red2)}
+.fsub:disabled{background:var(--gray2);cursor:default}
+
+/* CITIES */
+.cit-sec{background:var(--bg);padding:36px 0;border-top:1px solid var(--line)}
+.cit-hd{margin-bottom:18px}
+.cit-hd h2{font-size:1.2rem;font-weight:700;color:var(--dark);margin-bottom:3px}
+.cit-hd p{font-size:.85rem;color:var(--gray)}
+.cit-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(115px,1fr));gap:7px}
+.cp{display:block;background:var(--white);border:1px solid var(--line);border-radius:4px;padding:9px 8px;text-align:center;font-size:.82rem;font-weight:600;color:var(--text);transition:all .15s}
+.cp:hover{border-color:var(--red);color:var(--red);background:#FEECEE}
+.cp small{display:block;font-size:.63rem;color:var(--gray2);margin-top:2px;font-weight:400}
+
+/* IG SECTION */
+.ig-sec{text-align:center;padding:32px 0;border-top:1px solid var(--line)}
+.ig-sec h2{font-size:1.2rem;font-weight:700;color:var(--dark);margin-bottom:5px}
+.ig-sec p{font-size:.85rem;color:var(--gray);margin-bottom:18px}
+
+/* FOOTER */
+footer{background:#1A1A1A;color:rgba(255,255,255,.6);padding:40px 0 0}
+.fg2{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;margin-bottom:30px}
+.fl{font-size:1.2rem;font-weight:900;color:var(--white);margin-bottom:10px;display:block}
+.fl b{color:var(--red)}
+.fd{font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.7;margin-bottom:12px}
+.fsoc{display:flex;gap:7px}
+.fsc{width:30px;height:30px;background:rgba(255,255,255,.08);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55);transition:background .15s}
+.fsc:hover{background:var(--red);color:var(--white)}
+.fch4{font-size:.77rem;font-weight:700;color:rgba(255,255,255,.9);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
+.fc-ul{display:flex;flex-direction:column;gap:7px}
+.fc-ul a{font-size:.8rem;color:rgba(255,255,255,.4);transition:color .15s}
+.fc-ul a:hover{color:rgba(255,255,255,.9)}
+.fc-p{font-size:.8rem;color:rgba(255,255,255,.4);margin-bottom:4px;line-height:1.6}
+.fc-p a{color:rgba(255,255,255,.4)}
+.fc-p a:hover{color:rgba(255,255,255,.9)}
+.fbot{border-top:1px solid rgba(255,255,255,.08);padding:15px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.fbot p{font-size:.73rem;color:rgba(255,255,255,.28)}
+.fbl{display:flex;gap:16px}
+.fbl a{font-size:.73rem;color:rgba(255,255,255,.28);transition:color .15s}
+.fbl a:hover{color:rgba(255,255,255,.6)}
+
+/* SCROLL-TOP */
+.stb{position:fixed;bottom:20px;right:20px;z-index:800;width:38px;height:38px;background:rgba(33,33,33,.8);color:var(--white);border:none;border-radius:50%;cursor:pointer;font-size:.85rem;box-shadow:0 2px 8px rgba(0,0,0,.22);opacity:0;transform:translateY(8px);transition:all .2s}
+.stb.v{opacity:1;transform:translateY(0)}
+.stb:hover{background:var(--red)}
+
+/* FLOATING CTA */
+#fcta{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(22px);display:flex;gap:9px;z-index:900;opacity:0;transition:all .35s;pointer-events:none;max-width:92vw}
+#fcta.v{opacity:1;transform:translateX(-50%) translateY(0);pointer-events:auto}
+#fcta a{display:inline-flex;align-items:center;padding:10px 19px;border-radius:3px;font-weight:700;font-size:.87rem;white-space:nowrap}
+.fa-r{background:var(--red);color:var(--white);box-shadow:0 4px 14px rgba(225,0,32,.35)}
+.fa-r:hover{background:var(--red2)}
+.fa-w{background:var(--white);color:var(--dark);border:1.5px solid var(--line);box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.fa-w:hover{border-color:var(--dark)}
+
+/* MODAL */
+#modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:2000;align-items:center;justify-content:center;padding:16px}
+.m-box{background:var(--white);border-radius:6px;max-width:450px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 8px 40px rgba(0,0,0,.22)}
+.m-hd{background:var(--dark);padding:17px 20px;border-radius:6px 6px 0 0;display:flex;align-items:center;justify-content:space-between}
+.m-hd h3{color:var(--white);font-size:.95rem;font-weight:700}
+.m-hd p{color:rgba(255,255,255,.45);font-size:.73rem}
+.m-cls{background:rgba(255,255,255,.1);border:none;color:var(--white);width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:.82rem;display:flex;align-items:center;justify-content:center}
+.m-body{padding:20px}
+.m-ag{display:flex;align-items:center;gap:11px;padding:11px;background:var(--bg);border-radius:5px;margin-bottom:16px;border:1px solid var(--line)}
+.m-ag img{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid var(--red)}
+.m-ag strong{font-size:.85rem;color:var(--dark);display:block}
+.m-ag span{font-size:.7rem;color:var(--gray)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){.pg{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:960px){
+  .pg{grid-template-columns:repeat(2,1fr)}
+  .feat-inner{grid-template-columns:repeat(2,1fr)}
+  .fg2{grid-template-columns:1fr 1fr}
+  .ag-wrap{grid-template-columns:1fr}
+  .ag-photo img{height:240px}
+  .ag-body{padding:22px}
+  .bg,.tg,.sg{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav{display:none!important}
+  .hbg{display:flex!important}
+  .lf-split,.f2-col{grid-template-columns:1fr!important}
+  .f2{grid-template-columns:1fr!important}
+  .bg,.tg,.sg{grid-template-columns:1fr!important}
+  .fg2{grid-template-columns:1fr 1fr}
+  .sec{padding:28px 0}
+  .hero{min-height:auto;padding:48px 0}
+}
+@media(max-width:600px){
+  .feat-inner{grid-template-columns:1fr}
+  .pg{grid-template-columns:1fr!important}
+  .fg2{grid-template-columns:1fr!important}
+  .cit-grid{grid-template-columns:repeat(3,1fr)}
+  #fcta{flex-direction:column;width:88vw!important}
+  #fcta a{width:100%;justify-content:center}
+  .container{padding:0 16px}
+}
+html,body{max-width:100%;overflow-x:hidden}
+</style>
 </head>
 <body>
 
-<!-- HEADER — Realtor.ca exact style -->
+<!-- HEADER -->
 <header id="hdr">
-<div class="h-inner">
-  <a href="/" class="logo">Surrey<span>Homes</span></a>
-  <nav class="desktop-nav">
-    <a href="/buyers-guide" class="active">Buy</a>
+<div class="h-wrap">
+  <a href="/" class="logo">Surrey<b>Homes</b></a>
+  <nav class="nav">
+    <a href="/buyers-guide">Buy</a>
     <a href="/rental-guide">Rent</a>
     <a href="/sellers-guide">Sell</a>
     <a href="/real-estate-surrey-bc">Cities</a>
     <a href="/listings">Listings</a>
     <a href="/blog">Blog</a>
     <a href="/about">About</a>
-    <a href="/contact" class="nav-cta">Book a Call</a>
+    <a href="/contact" class="n-cta">Book a Call</a>
   </nav>
-  <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
-</div></header>
-<div class="mob-nav" id="mob">
-  <button class="mob-close" id="mc">✕</button>
-  <a href="/buyers-guide" onclick="closeMob()">Buy</a>
-  <a href="/rental-guide" onclick="closeMob()">Rent</a>
-  <a href="/sellers-guide" onclick="closeMob()">Sell</a>
-  <a href="/real-estate-surrey-bc" onclick="closeMob()">Cities</a>
-  <a href="/listings" onclick="closeMob()">Listings</a>
-  <a href="/blog" onclick="closeMob()">Blog</a>
-  <a href="/about" onclick="closeMob()">About</a>
-  <a href="/contact" onclick="closeMob()" class="mob-cta">Book a Call</a>
+  <button class="hbg" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
+</header>
+<div class="mnav" id="mnav">
+  <a href="/buyers-guide" onclick="cm()">Buy</a>
+  <a href="/rental-guide" onclick="cm()">Rent</a>
+  <a href="/sellers-guide" onclick="cm()">Sell</a>
+  <a href="/real-estate-surrey-bc" onclick="cm()">Cities</a>
+  <a href="/listings" onclick="cm()">Listings</a>
+  <a href="/blog" onclick="cm()">Blog</a>
+  <a href="/about" onclick="cm()">About</a>
+  <a href="/contact" onclick="cm()" class="mc">Book a Call</a>
 </div>
 
-<!-- HERO — Realtor.ca exact layout -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=90');"></div>
-  <div class="hero-overlay"></div>
-  <div class="container">
-  <div class="hero-inner">
-    <div class="hero-badge">Live · Metro Vancouver &amp; Fraser Valley BC</div>
-    <h1>Find Your Next Home<span class="loc">Metro Vancouver &amp; Fraser Valley</span></h1>
+  <div class="hero-img"></div>
+  <div class="hero-body">
+    <h1>Find Your Next Home in<br>Metro Vancouver &amp; Fraser Valley</h1>
 
-    <!-- SEARCH BOX — Exact Realtor.ca style -->
-    <div class="rc-search">
-      <div class="rc-tabs">
-        <button class="rc-tab active" onclick="setTab(this,'buy')">Buy</button>
-        <button class="rc-tab" onclick="setTab(this,'rent')">Rent</button>
-        <button class="rc-tab" onclick="setTab(this,'sell')">Sell</button>
+    <!-- SEARCH BOX -->
+    <div class="s-box">
+      <div class="s-tabs">
+        <button class="s-tab on" onclick="st(this,'buy')">Buy</button>
+        <button class="s-tab" onclick="st(this,'rent')">Rent</button>
+        <button class="s-tab" onclick="st(this,'sell')">Sell</button>
       </div>
-      <div class="rc-search-row">
-        <input class="rc-input" id="searchInput" type="text" placeholder="City, neighbourhood, or address..." />
-        <button class="rc-btn" onclick="handleSearch()">Search</button>
+      <div class="s-body">
+        <div class="s-row">
+          <input class="s-input" id="si" type="text" placeholder="City, neighbourhood, or address…">
+          <button class="s-go" onclick="hs()">Search</button>
+        </div>
       </div>
-      <div class="rc-links">
+      <div class="s-links">
+        <span>Popular:</span>
         <a href="/real-estate-surrey-bc">Surrey</a>
         <a href="/real-estate-vancouver-bc">Vancouver</a>
         <a href="/real-estate-burnaby-bc">Burnaby</a>
         <a href="/real-estate-langley-bc">Langley</a>
         <a href="/real-estate-richmond-bc">Richmond</a>
-        <a href="/real-estate-abbotsford-bc">Abbotsford</a>
       </div>
     </div>
-  </div>
   </div>
 </section>
 
-<!-- 3 FEATURE CARDS — Realtor.ca exact style -->
-<div class="container" style="margin-top:-1px;position:relative;z-index:10;padding-top:0;">
-<div class="feature-cards">
-  <a href="/buyers-guide" class="feature-card">
-    <div class="feature-card-icon">🏠</div>
+<!-- 4 FEATURE CARDS -->
+<div class="feat">
+<div class="feat-inner">
+  <a href="/buyers-guide" class="fc">
+    <div class="fc-ico">🏠</div>
     <h3>Buy a Home</h3>
-    <p>Find your dream home in Metro Vancouver or Fraser Valley. Expert buyer guidance, no cost to you.</p>
-    <span class="feature-card-link">Start searching ›</span>
+    <p>Find homes for sale across Metro Vancouver and Fraser Valley. Expert buyer guidance, no cost to you.</p>
+    <span class="fc-lnk">Browse homes ›</span>
   </a>
-  <a href="/sellers-guide" class="feature-card">
-    <div class="feature-card-icon">💰</div>
+  <a href="/sellers-guide" class="fc">
+    <div class="fc-ico">💰</div>
     <h3>Sell Your Home</h3>
-    <p>Get top dollar for your home with expert pricing, staging advice, and negotiation.</p>
-    <span class="feature-card-link">Get free evaluation ›</span>
+    <p>Get top dollar with expert pricing, professional staging advice, and skilled negotiation.</p>
+    <span class="fc-lnk">Get free evaluation ›</span>
   </a>
-  <a href="/rental-guide" class="feature-card">
-    <div class="feature-card-icon">🔑</div>
+  <a href="/rental-guide" class="fc">
+    <div class="fc-ico">🔑</div>
     <h3>Find a Rental</h3>
     <p>Rentals across 10 cities in Metro Vancouver and Fraser Valley. Free service for tenants.</p>
-    <span class="feature-card-link">Browse rentals ›</span>
+    <span class="fc-lnk">Browse rentals ›</span>
+  </a>
+  <a href="/listings" class="fc">
+    <div class="fc-ico">🎥</div>
+    <h3>Video Listings</h3>
+    <p>Watch video walkthroughs of the latest properties — real listings by a local REALTOR®.</p>
+    <span class="fc-lnk">Watch now ›</span>
   </a>
 </div>
 </div>
 
-<!-- TRUST BAR -->
-<div class="trust-bar">
+<!-- LATEST LISTINGS -->
+<section class="sec">
 <div class="container">
-<div class="trust-inner">
-  <div class="trust-item"><span style="color:var(--red);font-size:1.1rem;">⭐</span><div><strong>5-Star Rated</strong><span>200+ Reviews</span></div></div>
-  <div class="trust-item"><span style="color:var(--red);font-size:1.1rem;">🏆</span><div><strong>Top 1% Agent</strong><span>Metro Vancouver</span></div></div>
-  <div class="trust-item"><span style="color:var(--red);font-size:1.1rem;">📍</span><div><strong>21 Cities</strong><span>Local Expert</span></div></div>
-  <div class="trust-item"><span style="color:var(--red);font-size:1.1rem;">⚡</span><div><strong>45-Min Response</strong><span>Guaranteed</span></div></div>
-</div></div></div>
+  <div class="sec-hd">
+    <div><h2>Latest Listings &amp; Video Tours</h2><p>Real listings by Abhirai Arora, Licensed REALTOR®</p></div>
+    <a href="/listings" class="see-all">View all ›</a>
+  </div>
+  <div class="pg">
+    <a href="/listings/just-listed-condo-willoughby-langley-bc" class="pc">
+      <div class="pc-img"><img src="/assets/videos/just-listed-condo-willoughby-langley-bc-2023-thumb.jpg" alt="Condo Willoughby Langley BC" loading="lazy"><div class="pc-play"><div class="pc-btn">▶</div></div><span class="pc-badge">Just Listed</span></div>
+      <div class="pc-body"><div class="pc-price">$899,000</div><div class="pc-addr">Willoughby, Langley BC</div><div class="pc-meta"><span>2 Bed</span><span>2 Bath</span><span>Condo</span></div></div>
+    </a>
+    <a href="/listings/presale-townhouse-langley-bc" class="pc">
+      <div class="pc-img"><img src="/assets/videos/presale-townhouse-langley-bc-abhirai-arora-realtor-thumb.jpg" alt="Pre-Sale Townhouse Langley BC" loading="lazy"><div class="pc-play"><div class="pc-btn">▶</div></div><span class="pc-badge">Pre-Sale</span></div>
+      <div class="pc-body"><div class="pc-price">From $749,900</div><div class="pc-addr">Langley, BC</div><div class="pc-meta"><span>3 Bed</span><span>2.5 Bath</span><span>Townhouse</span></div></div>
+    </a>
+    <a href="/listings/victory-by-maskeen-presale-condo-langley-bc" class="pc">
+      <div class="pc-img"><img src="/assets/videos/victory-maskeen-presale-condo-langley-bc-thumb.jpg" alt="Victory Maskeen Langley BC" loading="lazy"><div class="pc-play"><div class="pc-btn">▶</div></div><span class="pc-badge">Pre-Sale</span></div>
+      <div class="pc-body"><div class="pc-price">From $599,900</div><div class="pc-addr">Langley, BC</div><div class="pc-meta"><span>1–3 Bed</span><span>1–2 Bath</span><span>Condo</span></div></div>
+    </a>
+    <a href="/listings/new-listing-commercial-downtown-surrey-bc" class="pc">
+      <div class="pc-img"><img src="/assets/videos/new-listing-downtown-business-surrey-bc-thumb.jpg" alt="Commercial Surrey BC" loading="lazy"><div class="pc-play"><div class="pc-btn">▶</div></div><span class="pc-badge">Commercial</span></div>
+      <div class="pc-body"><div class="pc-price">Contact for Price</div><div class="pc-addr">Downtown Surrey, BC</div><div class="pc-meta"><span>Turn-Key</span><span>Business</span></div></div>
+    </a>
+  </div>
+</div>
+</section>
 
-<!-- LISTINGS NEAR YOU -->
-<section class="section">
+<!-- FIND YOUR REALTOR -->
+<section class="sec sec-alt">
 <div class="container">
-  <div class="section-header" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
-    <div>
-      <span class="tag">Latest Listings</span>
-      <h2>Latest Properties &amp; Video Tours</h2>
-      <p style="margin-top:6px;">Real listings by Abhirai Arora, Licensed REALTOR®</p>
+  <div class="sec-hd" style="margin-bottom:18px">
+    <div><h2>Your Local REALTOR®</h2><p>Expert, honest guidance — 21 cities, free consultation</p></div>
+  </div>
+  <div class="ag-wrap">
+    <div class="ag-photo">
+      <picture>
+        <source srcset="/assets/images/agent-hero.webp" type="image/webp">
+        <img src="/assets/images/agent-hero.png" alt="Abhirai Arora REALTOR® Metro Vancouver BC" loading="eager">
+      </picture>
     </div>
-    <a href="/listings" class="btn btn-navy btn-sm">View All ›</a>
-  </div>
-  <div class="prop-grid">
-    <a href="/listings/just-listed-condo-willoughby-langley-bc" class="prop-card">
-      <div class="prop-card-img"><img src="/assets/videos/just-listed-condo-willoughby-langley-bc-2023-thumb.jpg" alt="Condo Willoughby Langley BC" loading="lazy"><div style="position:absolute;inset:0;background:rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;"><div style="width:44px;height:44px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;">▶</div></div><span class="prop-card-badge">Just Listed</span></div>
-      <div class="prop-card-body"><div class="prop-card-price">$899,000</div><div class="prop-card-address">📍 Willoughby, Langley BC</div><div class="prop-card-details"><span>2 Bed</span><span>2 Bath</span><span>Condo</span></div></div>
-    </a>
-    <a href="/listings/presale-townhouse-langley-bc" class="prop-card">
-      <div class="prop-card-img"><img src="/assets/videos/presale-townhouse-langley-bc-abhirai-arora-realtor-thumb.jpg" alt="Pre-Sale Townhouse Langley BC" loading="lazy"><div style="position:absolute;inset:0;background:rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;"><div style="width:44px;height:44px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;">▶</div></div><span class="prop-card-badge">Pre-Sale</span></div>
-      <div class="prop-card-body"><div class="prop-card-price">From $749,900</div><div class="prop-card-address">📍 Langley, BC</div><div class="prop-card-details"><span>3 Bed</span><span>2.5 Bath</span><span>Townhouse</span></div></div>
-    </a>
-    <a href="/listings/victory-by-maskeen-presale-condo-langley-bc" class="prop-card">
-      <div class="prop-card-img"><img src="/assets/videos/victory-maskeen-presale-condo-langley-bc-thumb.jpg" alt="Victory Maskeen Langley BC" loading="lazy"><div style="position:absolute;inset:0;background:rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;"><div style="width:44px;height:44px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;">▶</div></div><span class="prop-card-badge">Pre-Sale</span></div>
-      <div class="prop-card-body"><div class="prop-card-price">From $599,900</div><div class="prop-card-address">📍 Langley, BC</div><div class="prop-card-details"><span>1-3 Bed</span><span>1-2 Bath</span><span>Condo</span></div></div>
-    </a>
-    <a href="/listings/new-listing-commercial-downtown-surrey-bc" class="prop-card">
-      <div class="prop-card-img"><img src="/assets/videos/new-listing-downtown-business-surrey-bc-thumb.jpg" alt="Commercial Surrey BC" loading="lazy"><div style="position:absolute;inset:0;background:rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;"><div style="width:44px;height:44px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;">▶</div></div><span class="prop-card-badge">Commercial</span></div>
-      <div class="prop-card-body"><div class="prop-card-price">Contact for Price</div><div class="prop-card-address">📍 Downtown Surrey, BC</div><div class="prop-card-details"><span>Turn-Key</span><span>Business</span></div></div>
-    </a>
-  </div>
-</div></section>
-
-<!-- BROWSE BY CITY -->
-<section class="section" style="background:var(--gray5);border-top:var(--border);border-bottom:var(--border);">
-<div class="container">
-  <div class="section-header" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
-    <div>
-      <span class="tag">Browse by City</span>
-      <h2>Homes For Sale Across BC</h2>
-      <p style="margin-top:6px;">Local market expertise in every Metro Vancouver &amp; Fraser Valley city.</p>
-    </div>
-    <a href="/real-estate-surrey-bc" class="btn btn-navy btn-sm">All Cities ›</a>
-  </div>
-  <div class="city-grid">
-    <a href="/real-estate-vancouver-bc" class="city-card"><img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=400&q=80" alt="Vancouver BC" loading="lazy"><div class="city-card-overlay"></div><div class="city-card-label"><strong>Vancouver</strong><span>From $699K</span></div></a>
-    <a href="/real-estate-surrey-bc" class="city-card"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=80" alt="Surrey BC" loading="lazy"><div class="city-card-overlay"></div><div class="city-card-label"><strong>Surrey</strong><span>From $449K</span></div></a>
-    <a href="/real-estate-burnaby-bc" class="city-card"><img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&q=80" alt="Burnaby BC" loading="lazy"><div class="city-card-overlay"></div><div class="city-card-label"><strong>Burnaby</strong><span>From $549K</span></div></a>
-    <a href="/real-estate-richmond-bc" class="city-card"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=400&q=80" alt="Richmond BC" loading="lazy"><div class="city-card-overlay"></div><div class="city-card-label"><strong>Richmond</strong><span>From $599K</span></div></a>
-    <a href="/real-estate-langley-bc" class="city-card"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&q=80" alt="Langley BC" loading="lazy"><div class="city-card-overlay"></div><div class="city-card-label"><strong>Langley</strong><span>From $449K</span></div></a>
-    <a href="/real-estate-abbotsford-bc" class="city-card"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400&q=80" alt="Abbotsford BC" loading="lazy"><div class="city-card-overlay"></div><div class="city-card-label"><strong>Abbotsford</strong><span>From $379K</span></div></a>
-    <a href="/real-estate-chilliwack-bc" class="city-card"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80" alt="Chilliwack BC" loading="lazy"><div class="city-card-overlay"></div><div class="city-card-label"><strong>Chilliwack</strong><span>From $349K</span></div></a>
-    <a href="/real-estate-coquitlam-bc" class="city-card"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=400&q=80" alt="Coquitlam BC" loading="lazy"><div class="city-card-overlay"></div><div class="city-card-label"><strong>Coquitlam</strong><span>From $499K</span></div></a>
-  </div>
-</div></section>
-
-<!-- FIND YOUR AGENT — Realtor.ca style -->
-<section class="section">
-<div class="container">
-  <div class="agent-box">
-    <picture>
-      <source srcset="/assets/images/agent-hero.webp" type="image/webp">
-      <img src="/assets/images/agent-hero.png" alt="Abhirai Arora — Licensed REALTOR® Metro Vancouver BC" loading="eager">
-    </picture>
-    <div class="agent-box-body">
-      <span class="tag">Your Local REALTOR®</span>
+    <div class="ag-body">
       <h2>Abhirai Arora</h2>
-      <div class="agent-title">Licensed REALTOR® · Metro Vancouver &amp; Fraser Valley BC</div>
-      <p style="margin-bottom:16px;font-size:.95rem;color:var(--dark2);">With 10+ years in Metro Vancouver, I've helped 200+ buyers, sellers, and investors navigate BC's real estate market. I cover 21 cities — honest advice, no pressure, free consultation.</p>
-      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;">
-        <div style="display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--dark2);"><span style="color:var(--green);font-weight:700;">✓</span> Licensed by BC Financial Services Authority (BCFSA)</div>
-        <div style="display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--dark2);"><span style="color:var(--green);font-weight:700;">✓</span> Fluent in English, Hindi, and Punjabi</div>
-        <div style="display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--dark2);"><span style="color:var(--green);font-weight:700;">✓</span> 45-minute response guarantee — 7 days a week</div>
-        <div style="display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--dark2);"><span style="color:var(--green);font-weight:700;">✓</span> Free consultation — no obligation</div>
-      </div>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;">
-        <a href="/contact" class="btn btn-red">Book Free Consultation ›</a>
-        <a href="/about" class="btn btn-navy">View Profile</a>
-      </div>
+      <div class="ag-tag">Licensed REALTOR® · Metro Vancouver &amp; Fraser Valley BC</div>
+      <p>With 10+ years in Metro Vancouver, I've helped 200+ buyers, sellers, and investors navigate BC's real estate market. Fluent in English, Hindi, and Punjabi. Licensed by BC Financial Services Authority (BCFSA).</p>
+      <ul class="ag-checks">
+        <li class="ag-check">Licensed by BC Financial Services Authority (BCFSA)</li>
+        <li class="ag-check">10+ years experience across Metro Vancouver &amp; Fraser Valley</li>
+        <li class="ag-check">Fluent in English, Hindi, and Punjabi</li>
+        <li class="ag-check">45-minute response guarantee — 7 days a week</li>
+        <li class="ag-check">Free consultation — no pressure, no obligation</li>
+      </ul>
+      <a href="/contact" class="btn-r">Book Free Consultation ›</a>
+      <a href="/about" class="btn-o">View Profile</a>
     </div>
   </div>
-</div></section>
+</div>
+</section>
 
 <!-- HOW IT WORKS -->
-<section class="section" style="background:var(--gray5);border-top:var(--border);border-bottom:var(--border);">
+<section class="sec">
 <div class="container">
-  <div class="section-header center">
-    <span class="tag">Simple Process</span>
+  <div class="sec-hd sec-hd-c" style="margin-bottom:20px">
     <h2>How It Works</h2>
     <p>Buying or selling in BC doesn't have to be stressful.</p>
   </div>
-  <div class="grid-3">
-    <div class="step-card"><div class="step-num">1</div><h3>Book a Free Consultation</h3><p>No-obligation call to understand your goals, timeline, and budget. No pressure, no jargon — just real advice tailored to you.</p></div>
-    <div class="step-card"><div class="step-num">2</div><h3>We Find Your Match</h3><p>Using deep knowledge of Metro Vancouver markets, I find properties or buyers that truly fit your needs and budget.</p></div>
-    <div class="step-card"><div class="step-num">3</div><h3>You Get the Keys</h3><p>From offer to completion, I handle negotiations, paperwork, and coordination so you can focus on your next chapter.</p></div>
+  <div class="sg">
+    <div class="sc"><div class="sc-n">1</div><h3>Book a Free Consultation</h3><p>No-obligation call to understand your goals, timeline, and budget. No pressure, no jargon — just real advice.</p></div>
+    <div class="sc"><div class="sc-n">2</div><h3>We Find Your Match</h3><p>Using deep knowledge of Metro Vancouver markets, I find properties or buyers that truly fit your needs and budget.</p></div>
+    <div class="sc"><div class="sc-n">3</div><h3>You Get the Keys</h3><p>From offer to completion, I handle negotiations, paperwork, and coordination — you focus on your next chapter.</p></div>
   </div>
-</div></section>
+</div>
+</section>
 
-<!-- MARKET INSIGHTS / BLOG -->
-<section class="section">
+<!-- MARKET INSIGHTS -->
+<section class="sec sec-alt">
 <div class="container">
-  <div class="section-header" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
-    <div>
-      <span class="tag">Market Insights</span>
-      <h2>Latest Real Estate News &amp; Tips</h2>
-    </div>
-    <a href="/blog" class="btn btn-navy btn-sm">All Articles ›</a>
+  <div class="sec-hd">
+    <div><h2>Market Insights</h2><p>Latest real estate news and tips for Metro Vancouver</p></div>
+    <a href="/blog" class="see-all">All articles ›</a>
   </div>
-  <div class="grid-3">
-    <a href="/blog/metro-vancouver-real-estate-market-update-march-2026" class="card" style="text-decoration:none;display:block;">
-      <div style="background:var(--gray4);border-radius:var(--r-md);height:140px;margin-bottom:16px;overflow:hidden;"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&q=80" alt="Market Update" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
-      <div style="font-size:.72rem;color:var(--red);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;">Market Updates · March 2026</div>
-      <h3 style="font-size:.95rem;margin-bottom:8px;">Metro Vancouver Real Estate Market Update — March 2026</h3>
-      <p style="font-size:.83rem;">Latest prices, rate cuts, and what buyers and sellers should do now in Spring 2026.</p>
+  <div class="bg">
+    <a href="/blog/metro-vancouver-real-estate-market-update-march-2026" class="bc">
+      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" alt="Market Update" loading="lazy">
+      <div class="bc-body"><div class="bc-cat">Market Updates · March 2026</div><div class="bc-title">Metro Vancouver Real Estate Market Update — March 2026</div><div class="bc-exc">Latest prices, rate cuts, and what buyers and sellers should do now in Spring 2026.</div></div>
     </a>
-    <a href="/blog/first-time-buyer-programs-bc-2026-updated" class="card" style="text-decoration:none;display:block;">
-      <div style="background:var(--gray4);border-radius:var(--r-md);height:140px;margin-bottom:16px;overflow:hidden;"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400&q=80" alt="First Time Buyer BC" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
-      <div style="font-size:.72rem;color:var(--red);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;">Buying Guide · March 2026</div>
-      <h3 style="font-size:.95rem;margin-bottom:8px;">First-Time Buyer Programs BC 2026 — Updated Guide</h3>
-      <p style="font-size:.83rem;">FHSA, RRSP HBP, PTT exemptions — everything you need to know for 2026.</p>
+    <a href="/blog/first-time-buyer-programs-bc-2026-updated" class="bc">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" alt="First Time Buyer BC" loading="lazy">
+      <div class="bc-body"><div class="bc-cat">Buying Guide · March 2026</div><div class="bc-title">First-Time Buyer Programs BC 2026 — Updated Guide</div><div class="bc-exc">FHSA, RRSP HBP, PTT exemptions — everything you need to know for 2026.</div></div>
     </a>
-    <a href="/blog/surrey-langley-skytrain-real-estate-2026" class="card" style="text-decoration:none;display:block;">
-      <div style="background:var(--gray4);border-radius:var(--r-md);height:140px;margin-bottom:16px;overflow:hidden;"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&q=80" alt="SkyTrain Real Estate" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
-      <div style="font-size:.72rem;color:var(--red);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;">Investment · March 2026</div>
-      <h3 style="font-size:.95rem;margin-bottom:8px;">Surrey-Langley SkyTrain Extension: Real Estate Guide 2026</h3>
-      <p style="font-size:.83rem;">Which stations to buy near, price premiums, and investment strategy for BC's biggest transit project.</p>
+    <a href="/blog/surrey-langley-skytrain-real-estate-2026" class="bc">
+      <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="SkyTrain Real Estate" loading="lazy">
+      <div class="bc-body"><div class="bc-cat">Investment · March 2026</div><div class="bc-title">Surrey-Langley SkyTrain Extension: Real Estate Guide 2026</div><div class="bc-exc">Which stations to buy near and investment strategy for BC's biggest transit project.</div></div>
     </a>
   </div>
-</div></section>
+</div>
+</section>
 
 <!-- TESTIMONIALS -->
-<section class="section" style="background:var(--gray5);border-top:var(--border);border-bottom:var(--border);">
+<section class="sec">
 <div class="container">
-  <div class="section-header center">
-    <span class="tag">Client Reviews</span>
-    <h2>What My Clients Say</h2>
+  <div class="sec-hd sec-hd-c" style="margin-bottom:20px"><h2>What My Clients Say</h2></div>
+  <div class="tg">
+    <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-txt">"As first-time buyers in Surrey, we were overwhelmed. Abhirai explained everything from the PTT exemption to subject removal. We got our townhouse $15,000 under asking."</p><div class="tc-auth"><div class="tc-av">PR</div><div><div class="tc-name">Priya &amp; Raj S.</div><div class="tc-role">First-Time Buyers · Surrey BC</div></div></div></div>
+    <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-txt">"We sold our Burnaby home in 11 days — $47,000 over asking. The pricing strategy and negotiation were exceptional. I've already referred three friends."</p><div class="tc-auth"><div class="tc-av">MC</div><div><div class="tc-name">Michael &amp; Claire T.</div><div class="tc-role">Home Sellers · Burnaby BC</div></div></div></div>
+    <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-txt">"Found two rental properties in Langley with strong cap rates and a development lot in Abbotsford. The market knowledge is truly exceptional."</p><div class="tc-auth"><div class="tc-av">AK</div><div><div class="tc-name">Amandeep K.</div><div class="tc-role">Investor · Langley BC</div></div></div></div>
   </div>
-  <div class="grid-3">
-    <div class="testi"><div class="testi-stars">★★★★★</div><p class="testi-text">"As first-time buyers in Surrey, we were overwhelmed. Abhirai explained everything from the PTT exemption to subject removal. We got our townhouse $15,000 under asking."</p><div class="testi-author"><div class="testi-avatar">PR</div><div><div class="testi-name">Priya &amp; Raj S.</div><div class="testi-role">First-Time Buyers · Surrey BC</div></div></div></div>
-    <div class="testi"><div class="testi-stars">★★★★★</div><p class="testi-text">"We sold our Burnaby home in 11 days — $47,000 over asking. The pricing strategy and negotiation were exceptional. I've already referred three friends."</p><div class="testi-author"><div class="testi-avatar">MC</div><div><div class="testi-name">Michael &amp; Claire T.</div><div class="testi-role">Home Sellers · Burnaby BC</div></div></div></div>
-    <div class="testi"><div class="testi-stars">★★★★★</div><p class="testi-text">"Found two rental properties in Langley with strong cap rates and a development lot in Abbotsford. The market knowledge is exceptional."</p><div class="testi-author"><div class="testi-avatar">AK</div><div><div class="testi-name">Amandeep K.</div><div class="testi-role">Investor · Langley BC</div></div></div></div>
-  </div>
-</div></section>
+</div>
+</section>
 
 <!-- FAQ -->
-<section class="section">
+<section class="sec sec-alt">
 <div class="container">
-  <div class="section-header center">
-    <span class="tag">FAQ</span>
-    <h2>Frequently Asked Questions</h2>
+  <div class="sec-hd sec-hd-c" style="margin-bottom:22px"><h2>Frequently Asked Questions</h2></div>
+  <div class="faq">
+    <div class="fi"><div class="fq"><h3>What is the Property Transfer Tax (PTT) in BC?</h3><div class="fi-ico">+</div></div><div class="fa">BC's PTT is 1% on the first $200,000, 2% on $200,001–$2M, and 3% above $2M. First-time buyers may qualify for a full exemption on homes under $500,000, saving up to $7,700.</div></div>
+    <div class="fi"><div class="fq"><h3>Do I need a pre-approval before searching for homes in BC?</h3><div class="fi-ico">+</div></div><div class="fa">Yes — a mortgage pre-approval confirms your budget, strengthens your offer, and prevents disappointment. Most BC lenders offer free pre-approvals valid for 90–120 days.</div></div>
+    <div class="fi"><div class="fq"><h3>How long does it take to buy a house in BC?</h3><div class="fi-ico">+</div></div><div class="fa">Typically 2–4 months. Pre-approval: 1–5 days. Search: 2–6 weeks. Subject removal: 7–14 days. Completion: usually 30–60 days after accepted offer.</div></div>
+    <div class="fi"><div class="fq"><h3>Is the buyer's agent free in BC?</h3><div class="fi-ico">+</div></div><div class="fa">In most BC transactions, the buyer's agent commission is paid by the seller. As a buyer, you typically pay no direct realtor fee — I represent your interests at no cost to you.</div></div>
   </div>
-  <div class="faq-wrap">
-    <div class="faq-item"><div class="faq-q"><h3>What is the Property Transfer Tax (PTT) in BC?</h3><div class="faq-icon">+</div></div><div class="faq-a">BC's PTT is 1% on the first $200,000, 2% on $200,001–$2M, and 3% above $2M. First-time buyers may qualify for a full exemption on homes under $500,000, saving up to $7,700.</div></div>
-    <div class="faq-item"><div class="faq-q"><h3>Do I need a pre-approval before searching for homes in BC?</h3><div class="faq-icon">+</div></div><div class="faq-a">Yes — a mortgage pre-approval confirms your budget, strengthens your offer, and prevents disappointment. Most BC lenders offer free pre-approvals valid for 90–120 days.</div></div>
-    <div class="faq-item"><div class="faq-q"><h3>How long does it take to buy a house in BC?</h3><div class="faq-icon">+</div></div><div class="faq-a">Typically 2–4 months. Pre-approval: 1–5 days. Search: 2–6 weeks. Subject removal: 7–14 days. Completion: usually 30–60 days after accepted offer.</div></div>
-    <div class="faq-item"><div class="faq-q"><h3>Is the buyer's agent free in BC?</h3><div class="faq-icon">+</div></div><div class="faq-a">In most BC transactions, the buyer's agent commission is paid by the seller. As a buyer, you typically pay no direct realtor fee — I represent your interests at no cost to you.</div></div>
-  </div>
-</div></section>
+</div>
+</section>
 
 <!-- LEAD FORM -->
-<section class="section" style="background:var(--gray5);border-top:var(--border);">
+<section class="sec">
 <div class="container">
-<div class="lead-split">
-  <div class="lead-txt">
-    <span class="tag">Get Started</span>
-    <h2>Ready to Buy, Sell, or Rent in Metro Vancouver?</h2>
-    <p>Free consultation with a licensed BC REALTOR®. I'll respond within 45 minutes.</p>
-    <div class="checks">
-      <div class="check-item"><span class="check-icon">✓</span><span>Free, no-obligation consultation</span></div>
-      <div class="check-item"><span class="check-icon">✓</span><span>Local expert across 21 cities</span></div>
-      <div class="check-item"><span class="check-icon">✓</span><span>Licensed BC real estate professional</span></div>
-      <div class="check-item"><span class="check-icon">✓</span><span>45-minute response guarantee</span></div>
+<div class="lf-split">
+  <div class="lf-txt">
+    <h2>Ready to Buy, Sell, or Rent?</h2>
+    <p>Free consultation with a licensed BC REALTOR®. Response within 45 minutes.</p>
+    <div class="lf-checks">
+      <div class="lf-check">Free, no-obligation consultation</div>
+      <div class="lf-check">Local expert across 21 cities</div>
+      <div class="lf-check">Licensed BC real estate professional</div>
+      <div class="lf-check">45-minute response guarantee</div>
     </div>
   </div>
-  <div class="form-box">
+  <div class="f-box">
     <h3>Book Your Free Consultation</h3>
-    <form onsubmit="submitForm(event)">
-      <div class="f2">
-        <div class="fg"><label>First Name *</label><input type="text" required placeholder="Jane"></div>
-        <div class="fg"><label>Last Name *</label><input type="text" required placeholder="Smith"></div>
-      </div>
+    <form onsubmit="sf(event)">
+      <div class="f2"><div class="fg"><label>First Name *</label><input type="text" required placeholder="Jane"></div><div class="fg"><label>Last Name *</label><input type="text" required placeholder="Smith"></div></div>
       <div class="fg"><label>Email *</label><input type="email" required placeholder="jane@email.com"></div>
       <div class="fg"><label>Phone</label><input type="tel" placeholder="+1 604 000-0000"></div>
-      <div class="fg"><label>I Am Looking To...</label>
-        <select><option>Buy a Home</option><option>Sell My Home</option><option>Find a Rental</option><option>Invest in Real Estate</option><option>Just Exploring</option></select>
-      </div>
+      <div class="fg"><label>I Am Looking To...</label><select><option>Buy a Home</option><option>Sell My Home</option><option>Find a Rental</option><option>Invest in Real Estate</option><option>Just Exploring</option></select></div>
       <div class="fg"><label>Message (Optional)</label><textarea rows="2" placeholder="Tell me about your goals..."></textarea></div>
-      <button type="submit" class="f-submit">Send Message — It's Free ›</button>
-      <p style="text-align:center;font-size:.75rem;color:var(--gray2);margin-top:10px;">No spam. No obligation. Response within 45 minutes.</p>
+      <button type="submit" class="fsub">Send Message — It's Free ›</button>
+      <p style="text-align:center;font-size:.73rem;color:var(--gray2);margin-top:9px">No spam. No obligation. Response within 45 minutes.</p>
     </form>
   </div>
-</div></div></section>
+</div>
+</div>
+</section>
 
 <!-- ALL CITIES -->
-<section class="cities-section">
+<section class="cit-sec">
 <div class="container">
-  <div class="section-header" style="margin-bottom:20px;">
-    <span class="tag">All Service Areas</span>
-    <h2>Buy, Sell &amp; Rent Across Metro Vancouver &amp; Fraser Valley</h2>
-    <p style="margin-top:6px;font-size:.9rem;">Abhirai Arora, Licensed REALTOR® — serving 21 cities across BC's Lower Mainland</p>
+  <div class="cit-hd"><h2>Buy, Sell &amp; Rent Across BC</h2><p>Abhirai Arora, Licensed REALTOR® — 21 cities across Metro Vancouver &amp; Fraser Valley</p></div>
+  <div class="cit-grid">
+    <a href="/real-estate-vancouver-bc" class="cp">Vancouver<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-surrey-bc" class="cp">Surrey<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-burnaby-bc" class="cp">Burnaby<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-richmond-bc" class="cp">Richmond<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-langley-bc" class="cp">Langley<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-abbotsford-bc" class="cp">Abbotsford<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-delta-bc" class="cp">Delta<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-new-westminster-bc" class="cp">New West<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-mission-bc" class="cp">Mission<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-chilliwack-bc" class="cp">Chilliwack<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-coquitlam-bc" class="cp">Coquitlam<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-port-moody-bc" class="cp">Port Moody<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-maple-ridge-bc" class="cp">Maple Ridge<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-white-rock-bc" class="cp">White Rock<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-port-coquitlam-bc" class="cp">Port Coquitlam<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-pitt-meadows-bc" class="cp">Pitt Meadows<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-tsawwassen-bc" class="cp">Tsawwassen<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-aldergrove-bc" class="cp">Aldergrove<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-cloverdale-bc" class="cp">Cloverdale<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-hope-bc" class="cp">Hope<small>Buy · Rent · Sell</small></a>
+    <a href="/real-estate-agassiz-bc" class="cp">Agassiz<small>Buy · Rent · Sell</small></a>
   </div>
-  <div class="cities-grid">
-    <a href="/real-estate-vancouver-bc" class="city-pill">Vancouver<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-surrey-bc" class="city-pill">Surrey<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-burnaby-bc" class="city-pill">Burnaby<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-richmond-bc" class="city-pill">Richmond<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-langley-bc" class="city-pill">Langley<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-abbotsford-bc" class="city-pill">Abbotsford<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-delta-bc" class="city-pill">Delta<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-new-westminster-bc" class="city-pill">New Westminster<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-mission-bc" class="city-pill">Mission<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-chilliwack-bc" class="city-pill">Chilliwack<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-coquitlam-bc" class="city-pill">Coquitlam<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-port-moody-bc" class="city-pill">Port Moody<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-maple-ridge-bc" class="city-pill">Maple Ridge<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-white-rock-bc" class="city-pill">White Rock<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-port-coquitlam-bc" class="city-pill">Port Coquitlam<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-pitt-meadows-bc" class="city-pill">Pitt Meadows<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-tsawwassen-bc" class="city-pill">Tsawwassen<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-aldergrove-bc" class="city-pill">Aldergrove<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-cloverdale-bc" class="city-pill">Cloverdale<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-hope-bc" class="city-pill">Hope<small>Buy · Rent · Sell</small></a>
-    <a href="/real-estate-agassiz-bc" class="city-pill">Agassiz<small>Buy · Rent · Sell</small></a>
-  </div>
-</div></section>
+</div>
+</section>
+
+<!-- IG -->
+<div class="ig-sec">
+<div class="container">
+  <h2>Follow @abhiraiarora.realtor</h2>
+  <p>Real listings, local market insights, and BC real estate tips on Instagram.</p>
+  <a href="https://www.instagram.com/abhiraiarora.realtor" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;background:var(--dark);color:#fff;padding:10px 20px;border-radius:3px;font-weight:700;font-size:.88rem;">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    Follow on Instagram
+  </a>
+</div>
+</div>
 
 <!-- FOOTER -->
 <footer>
 <div class="container">
-<div class="footer-main">
-  <div class="footer-brand">
-    <a href="/" class="logo">Surrey<span>Homes</span></a>
-    <p>Licensed REALTOR® serving Metro Vancouver &amp; Fraser Valley BC since 2014. Buyer, seller, renter &amp; investor representation.</p>
-    <div class="fsocial">
-      <a href="https://www.instagram.com/abhiraiarora.realtor" target="_blank" rel="noopener" class="fsoc" aria-label="Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+<div class="fg2">
+  <div>
+    <a href="/" class="fl">Surrey<b>Homes</b></a>
+    <p class="fd">Licensed REALTOR® serving Metro Vancouver &amp; Fraser Valley BC since 2014. Buyer, seller, renter &amp; investor representation.</p>
+    <div class="fsoc">
+      <a href="https://www.instagram.com/abhiraiarora.realtor" target="_blank" rel="noopener" class="fsc" aria-label="Instagram">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
       </a>
     </div>
   </div>
-  <div class="fc"><h4>Services</h4><ul>
-    <li><a href="/buyers-guide">Buy a Home</a></li>
-    <li><a href="/rental-guide">Find a Rental</a></li>
-    <li><a href="/sellers-guide">Sell Your Home</a></li>
-    <li><a href="/free-home-evaluation">Free Evaluation</a></li>
-    <li><a href="/listings">Video Listings</a></li>
-    <li><a href="/blog">Real Estate Blog</a></li>
-  </ul></div>
-  <div class="fc"><h4>Top Cities</h4><ul>
-    <li><a href="/real-estate-vancouver-bc">Vancouver</a></li>
-    <li><a href="/real-estate-surrey-bc">Surrey</a></li>
-    <li><a href="/real-estate-burnaby-bc">Burnaby</a></li>
-    <li><a href="/real-estate-richmond-bc">Richmond</a></li>
-    <li><a href="/real-estate-langley-bc">Langley</a></li>
-    <li><a href="/real-estate-abbotsford-bc">Abbotsford</a></li>
-    <li><a href="/real-estate-chilliwack-bc">Chilliwack</a></li>
-  </ul></div>
-  <div class="fc"><h4>Contact</h4>
-    <p><strong style="color:rgba(255,255,255,.8);">Abhirai Arora</strong><br>Licensed REALTOR®</p>
-    <p><a href="tel:+16048971401">+16048971401</a></p>
-    <p><a href="mailto:info@abhirairealtor.com">info@abhirairealtor.com</a></p>
-    <p>201-13049 76 Ave<br>Surrey BC V3W 2V7</p>
-    <p style="margin-top:8px;"><strong style="color:rgba(255,255,255,.6);">Response:</strong> Within 45 Minutes</p>
-  </div>
+  <div><h4 class="fch4">Services</h4><ul class="fc-ul"><li><a href="/buyers-guide">Buy a Home</a></li><li><a href="/rental-guide">Find a Rental</a></li><li><a href="/sellers-guide">Sell Your Home</a></li><li><a href="/free-home-evaluation">Free Evaluation</a></li><li><a href="/listings">Video Listings</a></li><li><a href="/blog">Real Estate Blog</a></li></ul></div>
+  <div><h4 class="fch4">Top Cities</h4><ul class="fc-ul"><li><a href="/real-estate-vancouver-bc">Vancouver</a></li><li><a href="/real-estate-surrey-bc">Surrey</a></li><li><a href="/real-estate-burnaby-bc">Burnaby</a></li><li><a href="/real-estate-richmond-bc">Richmond</a></li><li><a href="/real-estate-langley-bc">Langley</a></li><li><a href="/real-estate-abbotsford-bc">Abbotsford</a></li><li><a href="/real-estate-chilliwack-bc">Chilliwack</a></li></ul></div>
+  <div><h4 class="fch4">Contact</h4><p class="fc-p"><strong style="color:rgba(255,255,255,.8)">Abhirai Arora</strong><br>Licensed REALTOR®</p><p class="fc-p"><a href="tel:+16048971401">+16048971401</a></p><p class="fc-p"><a href="mailto:info@abhirairealtor.com">info@abhirairealtor.com</a></p><p class="fc-p">201-13049 76 Ave<br>Surrey BC V3W 2V7</p><p class="fc-p" style="margin-top:6px"><strong style="color:rgba(255,255,255,.6)">Response:</strong> Within 45 Min</p></div>
 </div>
-<div class="footer-bot">
+<div class="fbot">
   <p>© 2026 Surrey Homes Real Estate. Abhirai Arora, Licensed REALTOR® in British Columbia.</p>
   <div class="fbl"><a href="/privacy-policy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="/sitemap.xml">Sitemap</a></div>
-</div></div></footer>
+</div>
+</div>
+</footer>
+
 <button class="stb" id="stb">↑</button>
 
 <!-- FLOATING CTA -->
-<div id="floatCTA">
-  <a href="/contact" class="btn btn-red" style="padding:10px 20px;font-size:.88rem;box-shadow:0 4px 16px rgba(226,0,37,.35);">Book Free Consultation ›</a>
-  <a href="/free-home-evaluation" class="btn btn-navy" style="padding:10px 20px;font-size:.88rem;">Free Home Evaluation</a>
+<div id="fcta">
+  <a href="/contact" class="fa-r">Book Free Consultation ›</a>
+  <a href="/free-home-evaluation" class="fa-w">Free Home Evaluation</a>
 </div>
-<script>
-(function(){
-  var f=document.getElementById('floatCTA');
-  var footer=document.querySelector('footer');
-  if(!f)return;
-  function u(){var p=(window.scrollY/(document.body.scrollHeight-window.innerHeight))*100;var s=p>25;if(footer){var r=footer.getBoundingClientRect();if(r.top<window.innerHeight+80)s=false;}if(s){f.style.opacity='1';f.style.transform='translateX(-50%) translateY(0)';f.style.pointerEvents='auto';}else{f.style.opacity='0';f.style.transform='translateX(-50%) translateY(20px)';f.style.pointerEvents='none';}}
-  window.addEventListener('scroll',u,{passive:true});u();
-})();
-</script>
-
-<!-- SEARCH + MODAL JS -->
-<script>
-var searchTab='buy';
-var searchUrls={buy:'/buyers-guide',rent:'/rental-guide',sell:'/free-home-evaluation'};
-function setTab(btn,tab){
-  document.querySelectorAll('.rc-tab').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active'); searchTab=tab;
-}
-function handleSearch(){window.location.href=searchUrls[searchTab];}
-document.getElementById('searchInput').addEventListener('keydown',function(e){if(e.key==='Enter')handleSearch();});
-function openModal(s){document.getElementById('consultModal').style.display='flex';document.body.style.overflow='hidden';}
-function closeModal(){document.getElementById('consultModal').style.display='none';document.body.style.overflow='';}
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
-</script>
 
 <!-- MODAL -->
-<div id="consultModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(3px);" onclick="if(event.target===this)closeModal()">
-  <div style="background:var(--white);border-radius:var(--r-lg);max-width:480px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:var(--sh-xl);">
-    <div style="background:var(--dark);padding:20px 24px;border-radius:var(--r-lg) var(--r-lg) 0 0;display:flex;align-items:center;justify-content:space-between;">
-      <div><h3 style="color:var(--white);margin-bottom:3px;font-size:1rem;font-family:var(--ff-b);">Book Your Free Consultation</h3><p style="color:rgba(255,255,255,.5);font-size:.78rem;">Response within 45 minutes guaranteed</p></div>
-      <button onclick="closeModal()" style="background:rgba(255,255,255,.1);border:none;color:var(--white);width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:.85rem;display:flex;align-items:center;justify-content:center;">✕</button>
+<div id="modal" onclick="if(event.target===this)cm2()">
+<div class="m-box">
+  <div class="m-hd">
+    <div><h3>Book Your Free Consultation</h3><p>Response within 45 minutes guaranteed</p></div>
+    <button class="m-cls" onclick="cm2()">✕</button>
+  </div>
+  <div class="m-body">
+    <div class="m-ag">
+      <picture><source srcset="/assets/images/agent-thumb.webp" type="image/webp"><img src="/assets/images/agent-hero.png" alt="Abhirai Arora" loading="eager"></picture>
+      <div><strong>Abhirai Arora</strong><span>Licensed REALTOR® · ⭐⭐⭐⭐⭐ 200+ Clients</span></div>
     </div>
-    <div style="padding:24px;">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;padding:12px;background:var(--gray5);border-radius:var(--r-md);border:var(--border);">
-        <picture><source srcset="/assets/images/agent-thumb.webp" type="image/webp"><img src="/assets/images/agent-hero.png" alt="Abhirai Arora" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid var(--red);" loading="eager"></picture>
-        <div><div style="font-weight:700;font-size:.88rem;color:var(--dark);font-family:var(--ff-b);">Abhirai Arora</div><div style="font-size:.73rem;color:var(--gray2);">Licensed REALTOR® · ⭐⭐⭐⭐⭐ 200+ Clients</div></div>
-      </div>
-      <form onsubmit="handleModalSubmit(event)">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
-          <div><label style="font-size:.75rem;font-weight:700;color:var(--dark2);display:block;margin-bottom:4px;">First Name *</label><input type="text" required placeholder="Jane" style="width:100%;padding:10px 14px;border-radius:var(--r-sm);border:2px solid var(--gray3);font-family:inherit;font-size:.88rem;outline:none;" onfocus="this.style.borderColor='var(--dark2)'" onblur="this.style.borderColor='var(--gray3)'"></div>
-          <div><label style="font-size:.75rem;font-weight:700;color:var(--dark2);display:block;margin-bottom:4px;">Phone *</label><input type="tel" required placeholder="+1 604 000 0000" style="width:100%;padding:10px 14px;border-radius:var(--r-sm);border:2px solid var(--gray3);font-family:inherit;font-size:.88rem;outline:none;" onfocus="this.style.borderColor='var(--dark2)'" onblur="this.style.borderColor='var(--gray3)'"></div>
-        </div>
-        <div style="margin-bottom:12px;"><label style="font-size:.75rem;font-weight:700;color:var(--dark2);display:block;margin-bottom:4px;">Email *</label><input type="email" required placeholder="you@email.com" style="width:100%;padding:10px 14px;border-radius:var(--r-sm);border:2px solid var(--gray3);font-family:inherit;font-size:.88rem;outline:none;" onfocus="this.style.borderColor='var(--dark2)'" onblur="this.style.borderColor='var(--gray3)'"></div>
-        <div style="margin-bottom:16px;"><label style="font-size:.75rem;font-weight:700;color:var(--dark2);display:block;margin-bottom:4px;">I am looking to...</label><select style="width:100%;padding:10px 14px;border-radius:var(--r-sm);border:2px solid var(--gray3);font-family:inherit;font-size:.88rem;background:var(--white);"><option>Buy a Home</option><option>Sell My Home</option><option>Find a Rental</option><option>Invest in Real Estate</option></select></div>
-        <button type="submit" style="width:100%;padding:12px;background:var(--red);color:var(--white);border:none;border-radius:var(--r-sm);font-size:.95rem;font-weight:700;cursor:pointer;font-family:inherit;">Send — I'll Reply in 45 Minutes ›</button>
-        <p style="text-align:center;font-size:.72rem;color:var(--gray2);margin-top:10px;">Free. No obligation. No spam.</p>
-      </form>
-    </div>
+    <form onsubmit="mf(event)">
+      <div class="f2"><div class="fg"><label>First Name *</label><input type="text" required placeholder="Jane"></div><div class="fg"><label>Phone *</label><input type="tel" required placeholder="+1 604 000 0000"></div></div>
+      <div class="fg"><label>Email *</label><input type="email" required placeholder="you@email.com"></div>
+      <div class="fg"><label>I am looking to...</label><select><option>Buy a Home</option><option>Sell My Home</option><option>Find a Rental</option><option>Invest in Real Estate</option></select></div>
+      <button type="submit" class="fsub">Send — I'll Reply in 45 Minutes ›</button>
+      <p style="text-align:center;font-size:.7rem;color:var(--gray2);margin-top:9px">Free. No obligation. No spam.</p>
+    </form>
   </div>
 </div>
+</div>
 
-<!-- GHL FORMS -->
+<script>
+// NAV
+var hbg=document.getElementById('hbg'),mnav=document.getElementById('mnav');
+function cm(){mnav.classList.remove('open');hbg.classList.remove('open');document.body.style.overflow='';}
+hbg.onclick=function(){mnav.classList.toggle('open');hbg.classList.toggle('open');document.body.style.overflow=mnav.classList.contains('open')?'hidden':'';}
+
+// SEARCH
+var stab='buy',surls={buy:'/buyers-guide',rent:'/rental-guide',sell:'/free-home-evaluation'};
+function st(b,t){document.querySelectorAll('.s-tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');stab=t;}
+function hs(){window.location.href=surls[stab];}
+document.getElementById('si').addEventListener('keydown',function(e){if(e.key==='Enter')hs();});
+
+// SCROLL TOP
+var stbtn=document.getElementById('stb');
+window.addEventListener('scroll',function(){stbtn.classList.toggle('v',window.scrollY>300);},{passive:true});
+stbtn.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};
+
+// HEADER SHADOW
+window.addEventListener('scroll',function(){document.getElementById('hdr').style.boxShadow=window.scrollY>5?'0 2px 8px rgba(0,0,0,.1)':'0 1px 0 rgba(0,0,0,.06)';},{passive:true});
+
+// FLOATING CTA
+var fcta=document.getElementById('fcta');
+window.addEventListener('scroll',function(){
+  var p=(window.scrollY/(document.body.scrollHeight-window.innerHeight))*100;
+  var s=p>22;
+  var ft=document.querySelector('footer');
+  if(ft&&ft.getBoundingClientRect().top<window.innerHeight+80)s=false;
+  fcta.classList.toggle('v',s);
+},{passive:true});
+
+// FAQ
+document.querySelectorAll('.fq').forEach(function(q){
+  q.onclick=function(){
+    var it=q.parentElement,op=it.classList.contains('op');
+    document.querySelectorAll('.fi').forEach(function(i){i.classList.remove('op');});
+    if(!op)it.classList.add('op');
+  };
+});
+
+// MODAL
+function om(){document.getElementById('modal').style.display='flex';document.body.style.overflow='hidden';}
+function cm2(){document.getElementById('modal').style.display='none';document.body.style.overflow='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')cm2();});
+function mf(e){e.preventDefault();var b=e.target.querySelector('[type=submit]');b.textContent='✓ Sent! Replying within 45 minutes.';b.style.background='#15803d';b.disabled=true;setTimeout(cm2,2500);}
+</script>
+
+<!-- GHL -->
 <script>
 (function(){
 var T='pit-6e10658c-8903-4db0-9f7f-c6ec2d4a3728',L='mfjOQXgc3G64dTDYevkh',W='04f882c6-ce3c-4c04-b3cd-72637be2ac9d';
-function ok(b){if(!b)return;b.textContent="✓ Sent! I'll reply within 45 minutes.";b.style.cssText='background:#15803d;color:#fff;width:100%;padding:12px;border-radius:4px;border:none;font-size:.95rem;cursor:default;display:block;text-align:center;font-weight:700;font-family:inherit;';b.disabled=true;}
-async function send(d,b){try{if(b){b.textContent='Sending...';b.disabled=true;}var r=await fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({locationId:L,firstName:d.fn||'Website',lastName:d.ln||'Lead',email:d.em||'',phone:d.ph||'',address1:d.ad||'',source:'Website surreyhomes.casa',tags:['website-lead']})});var j=await r.json();var id=j&&j.contact&&j.contact.id;if(id){fetch('https://services.leadconnectorhq.com/contacts/'+id+'/notes',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({body:'WEBSITE LEAD\nService:'+d.sv+'\nPage:'+d.pg+'\nMsg:'+d.ms+'\nTime:'+new Date().toLocaleString()})}).catch(function(){});fetch('https://services.leadconnectorhq.com/contacts/'+id+'/workflow/'+W,{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({eventStartTime:new Date().toISOString()})}).catch(function(){});}ok(b);}catch(e){console.error(e);ok(b);}}
-function parse(form){var d={fn:'',ln:'',em:'',ph:'',ad:'',sv:'',ms:'',pg:window.location.pathname};form.querySelectorAll('input,select,textarea').forEach(function(el){var v=(el.value||'').trim(),p=(el.placeholder||'').toLowerCase(),n=(el.name||el.id||'').toLowerCase(),t=(el.type||'').toLowerCase();if(!v||t==='submit'||t==='button'||n==='bot-field')return;if(t==='email'||n.indexOf('email')>-1)d.em=v;else if(t==='tel'||n.indexOf('phone')>-1||p.indexOf('phone')>-1)d.ph=v;else if(n.indexOf('first')>-1||p.indexOf('first')>-1)d.fn=v;else if(n.indexOf('last')>-1||p.indexOf('last')>-1)d.ln=v;else if(n.indexOf('address')>-1||p.indexOf('address')>-1)d.ad=v;else if(!d.fn&&(n.indexOf('name')>-1||p==='name')){var pts=v.split(' ');d.fn=pts[0];d.ln=pts.slice(1).join(' ');}else if(el.tagName==='SELECT')d.sv=v;else if(el.tagName==='TEXTAREA'||n.indexOf('message')>-1)d.ms=v;});return d;}
-window.submitForm=function(e){e.preventDefault();e.stopPropagation();var b=e.target.querySelector('[type="submit"]');if(b&&b.disabled)return;send(parse(e.target),b);};
-window.handleModalSubmit=function(e){e.preventDefault();e.stopPropagation();var b=e.target.querySelector('[type="submit"]');if(b&&b.disabled)return;var d=parse(e.target);send(d,b).then(function(){setTimeout(function(){if(typeof closeModal!=='undefined')closeModal();},2000);});};
+function ok(b){if(!b)return;b.textContent="✓ Sent! I'll reply within 45 minutes.";b.style.cssText='background:#15803d;color:#fff;width:100%;padding:11px;border-radius:3px;border:none;font-size:.92rem;cursor:default;display:block;text-align:center;font-weight:700;font-family:inherit;';b.disabled=true;}
+async function send(d,b){try{if(b){b.textContent='Sending...';b.disabled=true;}var r=await fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({locationId:L,firstName:d.fn||'Website',lastName:d.ln||'Lead',email:d.em||'',phone:d.ph||'',source:'Website surreyhomes.casa',tags:['website-lead']})});var j=await r.json();var id=j&&j.contact&&j.contact.id;if(id){fetch('https://services.leadconnectorhq.com/contacts/'+id+'/notes',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({body:'WEBSITE LEAD\nService:'+d.sv+'\nPage:'+window.location.pathname+'\nMsg:'+d.ms+'\nTime:'+new Date().toLocaleString()})}).catch(function(){});fetch('https://services.leadconnectorhq.com/contacts/'+id+'/workflow/'+W,{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({eventStartTime:new Date().toISOString()})}).catch(function(){});}ok(b);}catch(e){ok(b);}}
+function parse(form){var d={fn:'',ln:'',em:'',ph:'',sv:'',ms:''};form.querySelectorAll('input,select,textarea').forEach(function(el){var v=(el.value||'').trim(),p=(el.placeholder||'').toLowerCase(),n=(el.name||el.id||'').toLowerCase(),t=(el.type||'').toLowerCase();if(!v||t==='submit')return;if(t==='email')d.em=v;else if(t==='tel'||p.indexOf('phone')>-1)d.ph=v;else if(n.indexOf('first')>-1||p.indexOf('first')>-1)d.fn=v;else if(n.indexOf('last')>-1||p.indexOf('last')>-1)d.ln=v;else if(!d.fn&&(n.indexOf('name')>-1||p==='name')){var x=v.split(' ');d.fn=x[0];d.ln=x.slice(1).join(' ');}else if(el.tagName==='SELECT')d.sv=v;else if(el.tagName==='TEXTAREA')d.ms=v;});return d;}
+window.sf=function(e){e.preventDefault();e.stopPropagation();var b=e.target.querySelector('[type=submit]');if(b&&b.disabled)return;send(parse(e.target),b);};
+window.mf=function(e){e.preventDefault();e.stopPropagation();var b=e.target.querySelector('[type=submit]');if(b&&b.disabled)return;send(parse(e.target),b).then(function(){setTimeout(cm2,2200);});};
 })();
 </script>
 <script src="/assets/js/main.js" defer></script>
