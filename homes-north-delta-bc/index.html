@@ -1,1 +1,42 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="refresh" content="0; url=/neighbourhoods/north-delta-bc.html"><script>window.location.replace("/neighbourhoods/north-delta-bc.html");</script></head><body><a href="/neighbourhoods/north-delta-bc.html">Redirecting...</a></body></html>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="refresh" content="0; url=/neighbourhoods/north-delta-bc.html"><script>window.location.replace("/neighbourhoods/north-delta-bc.html");</script></head><body><a href="/neighbourhoods/north-delta-bc.html">Redirecting...</a><button class="stb" id="stb">&#x2191;</button>
+<div id="fcta">
+  <a href="/contact" class="fa-r">Book Free Consultation &#x203A;</a>
+  <a href="/free-home-evaluation" class="fa-w">Free Home Evaluation</a>
+</div>
+<div id="modal" onclick="if(event.target===this)cm2()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:2000;align-items:center;justify-content:center;padding:16px;">
+<div style="background:#fff;border-radius:6px;max-width:450px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 8px 40px rgba(0,0,0,.22);">
+  <div style="background:#212121;padding:17px 20px;border-radius:6px 6px 0 0;display:flex;align-items:center;justify-content:space-between;">
+    <div><h3 style="color:#fff;font-size:.95rem;font-weight:700;font-family:inherit;">Book Your Free Consultation</h3><p style="color:rgba(255,255,255,.45);font-size:.73rem;">Response within 45 minutes guaranteed</p></div>
+    <button onclick="cm2()" style="background:rgba(255,255,255,.1);border:none;color:#fff;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:.82rem;display:flex;align-items:center;justify-content:center;">X</button>
+  </div>
+  <div style="padding:20px;">
+    <div style="display:flex;align-items:center;gap:11px;padding:11px;background:#f7f7f7;border-radius:5px;margin-bottom:16px;border:1px solid #ddd;">
+      <picture><source srcset="/assets/images/agent-thumb.webp" type="image/webp"><img src="/assets/images/agent-hero.png" alt="Abhirai Arora" style="width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid #E10020;" loading="eager"></picture>
+      <div><strong style="font-size:.85rem;color:#212121;display:block;">Abhirai Arora</strong><span style="font-size:.7rem;color:#717171;">Licensed REALTOR® 200+ Clients</span></div>
+    </div>
+    <form onsubmit="handleModalSubmit(event)">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;">
+        <div><label style="font-size:.75rem;font-weight:700;color:#484848;display:block;margin-bottom:4px;">First Name *</label><input type="text" required placeholder="Jane" style="width:100%;padding:10px 13px;border:1.5px solid #ddd;border-radius:3px;font-family:inherit;font-size:.88rem;outline:none;"></div>
+        <div><label style="font-size:.75rem;font-weight:700;color:#484848;display:block;margin-bottom:4px;">Phone *</label><input type="tel" required placeholder="+1 604 000 0000" style="width:100%;padding:10px 13px;border:1.5px solid #ddd;border-radius:3px;font-family:inherit;font-size:.88rem;outline:none;"></div>
+      </div>
+      <div style="margin-bottom:10px;"><label style="font-size:.75rem;font-weight:700;color:#484848;display:block;margin-bottom:4px;">Email *</label><input type="email" required placeholder="you@email.com" style="width:100%;padding:10px 13px;border:1.5px solid #ddd;border-radius:3px;font-family:inherit;font-size:.88rem;outline:none;"></div>
+      <div style="margin-bottom:14px;"><label style="font-size:.75rem;font-weight:700;color:#484848;display:block;margin-bottom:4px;">I am looking to...</label><select style="width:100%;padding:10px 13px;border:1.5px solid #ddd;border-radius:3px;font-family:inherit;font-size:.88rem;background:#fff;"><option>Buy a Home</option><option>Sell My Home</option><option>Find a Rental</option><option>Invest in Real Estate</option></select></div>
+      <button type="submit" style="width:100%;padding:11px;background:#E10020;color:#fff;border:none;border-radius:3px;font-size:.92rem;font-weight:700;cursor:pointer;font-family:inherit;">Send - Reply in 45 Minutes</button>
+    </form>
+  </div>
+</div>
+</div>
+<script>
+var hbg=document.getElementById('hbg'),mnav=document.getElementById('mnav');
+function cm(){mnav.classList.remove('open');hbg.classList.remove('open');document.body.style.overflow='';}
+hbg.onclick=function(){mnav.classList.toggle('open');hbg.classList.toggle('open');document.body.style.overflow=mnav.classList.contains('open')?'hidden':'';}
+var stbtn=document.getElementById('stb');
+if(stbtn){window.addEventListener('scroll',function(){stbtn.classList.toggle('v',window.scrollY>300);},{passive:true});stbtn.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};}
+window.addEventListener('scroll',function(){var h=document.getElementById('hdr');if(h)h.style.boxShadow=window.scrollY>5?'0 2px 8px rgba(0,0,0,.1)':'0 1px 0 rgba(0,0,0,.06)';},{passive:true});
+document.querySelectorAll('.fq').forEach(function(q){q.onclick=function(){var it=q.parentElement,op=it.classList.contains('op');document.querySelectorAll('.fi').forEach(function(i){i.classList.remove('op');});if(!op)it.classList.add('op');};});
+var fcta=document.getElementById('fcta');
+if(fcta){window.addEventListener('scroll',function(){var p=(window.scrollY/(document.body.scrollHeight-window.innerHeight))*100,s=p>22,ft=document.querySelector('footer');if(ft&&ft.getBoundingClientRect().top<window.innerHeight+80)s=false;fcta.classList.toggle('v',s);},{passive:true});}
+function cm2(){document.getElementById('modal').style.display='none';document.body.style.overflow='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')cm2();});
+</script>
+</body></html>

@@ -7,13 +7,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#1A1A2E;--gold:#C9A84C;--cream:#F5F0E8}
+  :root{--navy:#212121;--gold:#E10020;--cream:#f7f7f7}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'DM Sans',sans-serif;background:var(--navy);color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem}
-  h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,10vw,8rem);color:var(--gold);line-height:1}
+  body{font-family:'DM Sans',sans-serif;background:#212121;color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem}
+  h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,10vw,8rem);color:var(--red);line-height:1}
   h2{font-size:clamp(1.2rem,3vw,2rem);margin:1rem 0 1.5rem;font-weight:400}
   p{color:rgba(255,255,255,.65);margin-bottom:2rem;max-width:480px}
-  .btn{display:inline-block;background:var(--gold);color:var(--navy);padding:.85rem 2rem;border-radius:6px;font-weight:600;text-decoration:none;margin:.5rem}
+  .btn{display:inline-block;background:var(--red);color:#212121;padding:.85rem 2rem;border-radius:6px;font-weight:600;text-decoration:none;margin:.5rem}
   .btn-out{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.3)}
 </style>
 <link rel="canonical" href="https://surreyhomes.casa/404">
@@ -64,32 +64,32 @@
 
 <!-- Floating CTA — appears after 50% scroll (2 scrolls) -->
 <div id="floatCTA" style="position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%) translateY(20px);display:flex;justify-content:center;gap:.65rem;flex-wrap:wrap;z-index:900;opacity:0;transition:all .4s ease;pointer-events:none;max-width:92vw;">
-  <a href="/contact" class="btn btn-gold" style="padding:.65rem 1.4rem;font-size:.85rem;box-shadow:0 4px 20px rgba(201,168,76,.4);">Book Free Consultation ›</a>
+  <a href="/contact" class="btn btn-gold" style="padding:.65rem 1.4rem;font-size:.85rem;box-shadow:0 4px 20px rgba(225,0,37,.4);">Book Free Consultation ›</a>
   <a href="/free-home-evaluation" class="btn btn-navy" style="padding:.65rem 1.4rem;font-size:.85rem;box-shadow:0 4px 20px rgba(0,0,0,.2);border:2px solid rgba(255,255,255,.2);">Free Evaluation</a>
 </div>
 <script>(function(){var f=document.getElementById('floatCTA');var footer=document.querySelector('footer');if(!f)return;function u(){var p=(window.scrollY/(document.body.scrollHeight-window.innerHeight))*100;var s=p>30;if(footer){var r=footer.getBoundingClientRect();if(r.top<window.innerHeight+80)s=false;}if(s){f.style.opacity='1';f.style.transform='translateX(-50%) translateY(0)';f.style.pointerEvents='auto';}else{f.style.opacity='0';f.style.transform='translateX(-50%) translateY(20px)';f.style.pointerEvents='none';}}window.addEventListener('scroll',u,{passive:true});u();})();</script>
 
 <div id="consultModal" style="display:none;position:fixed;inset:0;background:rgba(10,10,30,.85);z-index:2000;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(4px);" onclick="if(event.target===this)closeModal()">
   <div style="background:#fff;border-radius:20px;max-width:500px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 24px 80px rgba(0,0,0,.4);">
-    <div style="background:var(--navy);padding:1.75rem 2rem;border-radius:20px 20px 0 0;display:flex;align-items:center;justify-content:space-between;">
+    <div style="background:#212121;padding:1.75rem 2rem;border-radius:20px 20px 0 0;display:flex;align-items:center;justify-content:space-between;">
       <div><h3 style="color:#fff;margin-bottom:.25rem;font-size:1.15rem;">Book Your Free Consultation</h3><p style="color:rgba(255,255,255,.6);font-size:.8rem;">Response within 45 minutes guaranteed</p></div>
       <button onclick="closeModal()" style="background:rgba(255,255,255,.1);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;">✕</button>
     </div>
     <div style="padding:1.75rem 2rem;">
-      <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1.5rem;padding:.85rem;background:var(--cream);border-radius:10px;">
-        <picture><source srcset="/assets/images/agent-thumb.webp" type="image/webp"><img src="/assets/images/agent-hero.png" alt="Abhirai Arora — Licensed REALTOR® Metro Vancouver & Fraser Valley BC" style="width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid var(--gold);" loading="eager"></picture>
-        <div><div style="font-weight:700;font-size:.9rem;color:var(--navy);">Abhirai Arora</div><div style="font-size:.75rem;color:var(--slate);">Licensed REALTOR® · ⭐⭐⭐⭐⭐ 200+ Clients</div></div>
+      <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1.5rem;padding:.85rem;background:#f7f7f7;border-radius:10px;">
+        <picture><source srcset="/assets/images/agent-thumb.webp" type="image/webp"><img src="/assets/images/agent-hero.png" alt="Abhirai Arora — Licensed REALTOR® Metro Vancouver & Fraser Valley BC" style="width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid var(--red);" loading="eager"></picture>
+        <div><div style="font-weight:700;font-size:.9rem;color:#212121;">Abhirai Arora</div><div style="font-size:.75rem;color:#717171;">Licensed REALTOR® · ⭐⭐⭐⭐⭐ 200+ Clients</div></div>
       </div>
       <form name="modal-consultation" onsubmit="handleModalSubmit(event)">
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:.75rem;">
-          <div><label style="font-size:.78rem;font-weight:600;color:var(--slate);display:block;margin-bottom:.3rem;">First Name *</label><input type="text" required placeholder="Jane" style="width:100%;padding:.65rem .9rem;border-radius:8px;border:1.5px solid rgba(26,26,46,.15);font-family:inherit;font-size:.88rem;outline:none;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(26,26,46,.15)'"></div>
-          <div><label style="font-size:.78rem;font-weight:600;color:var(--slate);display:block;margin-bottom:.3rem;">Phone *</label><input type="tel" required placeholder="+1 604 000 0000" style="width:100%;padding:.65rem .9rem;border-radius:8px;border:1.5px solid rgba(26,26,46,.15);font-family:inherit;font-size:.88rem;outline:none;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(26,26,46,.15)'"></div>
+          <div><label style="font-size:.78rem;font-weight:600;color:#717171;display:block;margin-bottom:.3rem;">First Name *</label><input type="text" required placeholder="Jane" style="width:100%;padding:.65rem .9rem;border-radius:8px;border:1.5px solid rgba(26,26,46,.15);font-family:inherit;font-size:.88rem;outline:none;" onfocus="this.style.borderColor='#E10020'" onblur="this.style.borderColor='rgba(26,26,46,.15)'"></div>
+          <div><label style="font-size:.78rem;font-weight:600;color:#717171;display:block;margin-bottom:.3rem;">Phone *</label><input type="tel" required placeholder="+1 604 000 0000" style="width:100%;padding:.65rem .9rem;border-radius:8px;border:1.5px solid rgba(26,26,46,.15);font-family:inherit;font-size:.88rem;outline:none;" onfocus="this.style.borderColor='#E10020'" onblur="this.style.borderColor='rgba(26,26,46,.15)'"></div>
         </div>
-        <div style="margin-bottom:.75rem;"><label style="font-size:.78rem;font-weight:600;color:var(--slate);display:block;margin-bottom:.3rem;">Email *</label><input type="email" required placeholder="you@email.com" style="width:100%;padding:.65rem .9rem;border-radius:8px;border:1.5px solid rgba(26,26,46,.15);font-family:inherit;font-size:.88rem;outline:none;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(26,26,46,.15)'"></div>
-        <div style="margin-bottom:.75rem;"><label style="font-size:.78rem;font-weight:600;color:var(--slate);display:block;margin-bottom:.3rem;">I am looking to...</label><select style="width:100%;padding:.65rem .9rem;border-radius:8px;border:1.5px solid rgba(26,26,46,.15);font-family:inherit;font-size:.88rem;background:#fff;"><option>Buy a Condo</option><option>Buy a Townhouse</option><option>Rent a Property</option><option>Sell My Home</option><option>Invest in Real Estate</option></select></div>
-        <div style="margin-bottom:1rem;"><label style="font-size:.78rem;font-weight:600;color:var(--slate);display:block;margin-bottom:.3rem;">Message</label><textarea rows="2" placeholder="Tell me about your goals..." style="width:100%;padding:.65rem .9rem;border-radius:8px;border:1.5px solid rgba(26,26,46,.15);font-family:inherit;font-size:.88rem;resize:vertical;outline:none;"></textarea></div>
+        <div style="margin-bottom:.75rem;"><label style="font-size:.78rem;font-weight:600;color:#717171;display:block;margin-bottom:.3rem;">Email *</label><input type="email" required placeholder="you@email.com" style="width:100%;padding:.65rem .9rem;border-radius:8px;border:1.5px solid rgba(26,26,46,.15);font-family:inherit;font-size:.88rem;outline:none;" onfocus="this.style.borderColor='#E10020'" onblur="this.style.borderColor='rgba(26,26,46,.15)'"></div>
+        <div style="margin-bottom:.75rem;"><label style="font-size:.78rem;font-weight:600;color:#717171;display:block;margin-bottom:.3rem;">I am looking to...</label><select style="width:100%;padding:.65rem .9rem;border-radius:8px;border:1.5px solid rgba(26,26,46,.15);font-family:inherit;font-size:.88rem;background:#fff;"><option>Buy a Condo</option><option>Buy a Townhouse</option><option>Rent a Property</option><option>Sell My Home</option><option>Invest in Real Estate</option></select></div>
+        <div style="margin-bottom:1rem;"><label style="font-size:.78rem;font-weight:600;color:#717171;display:block;margin-bottom:.3rem;">Message</label><textarea rows="2" placeholder="Tell me about your goals..." style="width:100%;padding:.65rem .9rem;border-radius:8px;border:1.5px solid rgba(26,26,46,.15);font-family:inherit;font-size:.88rem;resize:vertical;outline:none;"></textarea></div>
         <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;padding:.85rem;font-size:.95rem;">Send — I'll Reply in 45 Minutes ›</button>
-        <p style="text-align:center;font-size:.72rem;color:var(--slate);margin-top:.75rem;">Free. No obligation. No spam.</p>
+        <p style="text-align:center;font-size:.72rem;color:#717171;margin-top:.75rem;">Free. No obligation. No spam.</p>
       </form>
     </div>
   </div>
