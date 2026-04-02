@@ -19,8 +19,9 @@
   --blue-light:#EBF3FB;
   --green:     #2E7D32;
 
-  /* Compat vars */
+  /* Compat vars — old theme mapped to new Realtor.ca colors */
   --navy:#1A1A1A; --gold:#E20025; --cream:#F2F2F2; --slate:#767676; --navy-d:#1A1A1A;
+  --bg:#F7F7F7; --gray:#717171; --line:#DDDDDD; --text:#484848; --red2:#C4001B; --radius:6px;
 
   --ff-h:'Source Serif 4',Georgia,serif;
   --ff-b:'Source Sans 3',-apple-system,BlinkMacSystemFont,sans-serif;
