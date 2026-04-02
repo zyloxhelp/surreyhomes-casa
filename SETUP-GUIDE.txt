@@ -1,0 +1,79 @@
+═══════════════════════════════════════════════════════
+ SURREY HOMES REAL ESTATE — WEBSITE SETUP GUIDE
+═══════════════════════════════════════════════════════
+
+STEP 1: NETLIFY DEPLOY (5 minutes)
+───────────────────────────────────
+1. Go to https://app.netlify.com → Sign up free
+2. Click "Add new site" → "Deploy manually"
+3. Drag & drop the entire "realestate-site" folder
+4. Your site is LIVE at a .netlify.app URL
+
+STEP 2: CONNECT YOUR DOMAIN (5 minutes)
+─────────────────────────────────────────
+1. Netlify → Site Settings → Domain Management
+2. Add custom domain: surreyhomes.casa
+3. Netlify gives you nameservers (e.g. dns1.p01.nsone.net)
+4. Go to your domain registrar → Update nameservers
+5. Wait 10-30 minutes → SSL auto-activates
+
+STEP 3: ENABLE CMS (3 minutes)
+────────────────────────────────
+1. Netlify → Site Settings → Identity → Enable Identity
+2. Netlify → Site Settings → Identity → Git Gateway → Enable
+3. Invite yourself: Identity → Invite Users → your@email.com
+4. Check email → Accept invite → Set password
+5. Go to: yoursite.netlify.app/admin
+   → Login and edit ANY page in your browser!
+
+STEP 4: GOOGLE ANALYTICS (2 minutes)
+──────────────────────────────────────
+1. Go to analytics.google.com → Create property
+2. Get your Measurement ID (G-XXXXXXXXXX)
+3. In CMS: Settings → General → Paste your GA ID
+   OR search & replace "G-XXXXXXXXXX" in all files
+
+STEP 5: GOOGLE SEARCH CONSOLE (3 minutes)
+───────────────────────────────────────────
+1. Go to search.google.com/search-console
+2. Add property: surreyhomes.casa
+3. Verify via DNS (Netlify domain settings)
+4. Submit sitemap: https://surreyhomes.casa/sitemap.xml
+5. Done! Google will start indexing all 117 pages
+
+STEP 6: ADD IMAGES (optional but recommended)
+───────────────────────────────────────────────
+• og-image.jpg (1200x630px) → assets/images/ for social sharing
+• agent.jpg → assets/images/ for About page
+
+═══════════════════════════════════════════════════════
+ EDITING PAGES VIA CMS (surreyhomes.casa/admin)
+═══════════════════════════════════════════════════════
+
+After Step 3, go to /admin and you can:
+
+✏️  BLOG POSTS → Write new blog articles, add images
+✏️  HOMEPAGE → Edit hero text, stats, testimonials, FAQs
+✏️  CITY PAGES → Update market info, prices, descriptions
+✏️  ABOUT PAGE → Update bio, photo, credentials
+✏️  SITE SETTINGS → Update phone, email, social links
+
+NO CODING REQUIRED — everything edits in your browser!
+
+═══════════════════════════════════════════════════════
+ WHAT'S INCLUDED IN YOUR 117-PAGE WEBSITE
+═══════════════════════════════════════════════════════
+
+✅ Core Pages         : Home, About, Contact, Free Evaluation
+✅ City Hub Pages     : 21 cities (Vancouver to Agassiz)
+✅ Buy Pages          : 43 pages (property type × city)
+✅ Sell Pages         : 10 cities
+✅ Neighbourhood Pages: 39 areas
+✅ SEO                : Title, meta, canonical, schema on every page
+✅ Sitemap            : sitemap.xml ready for Google
+✅ robots.txt         : Search engine instructions
+✅ 404 Page           : Custom branded error page
+✅ CMS Admin          : Browser-based editing at /admin
+✅ Mobile Responsive  : Works on all devices
+
+═══════════════════════════════════════════════════════

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block CMS admin from indexing
+Disallow: /admin/
+
+# Sitemaps
+Sitemap: https://surreyhomes.casa/sitemap.xml
+Sitemap: https://surreyhomes.casa/sitemap-images.xml

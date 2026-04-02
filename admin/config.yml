@@ -1,0 +1,121 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+locale: 'en'
+
+collections:
+
+  # ── BLOG POSTS ──────────────────────────────────────────────────────────────
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "_posts"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "blog/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "SEO Meta Title (max 60 chars)", name: "meta_title", widget: "string", required: false }
+      - { label: "SEO Meta Description (max 160 chars)", name: "meta_desc", widget: "text", required: false }
+      - { label: "Category", name: "category", widget: "select", options: ["Buying Guide","Selling Guide","Market Updates","Neighbourhoods","Investment","Fraser Valley","Metro Vancouver"] }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "CTA Text", name: "cta", widget: "string", default: "Have questions? Book a free consultation.", required: false }
+
+  # ── HOMEPAGE ────────────────────────────────────────────────────────────────
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - label: "Homepage Content"
+        name: "homepage"
+        file: "_data/homepage.json"
+        fields:
+          - { label: "Hero Headline", name: "hero_h1", widget: "string" }
+          - { label: "Hero Subheadline", name: "hero_sub", widget: "text" }
+          - { label: "Hero Button 1 Text", name: "btn1_text", widget: "string", default: "Search Homes Now" }
+          - { label: "Hero Button 1 URL", name: "btn1_url", widget: "string", default: "/buyers-guide" }
+          - { label: "Hero Button 2 Text", name: "btn2_text", widget: "string", default: "Get a Free Home Evaluation" }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "num", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Client Name", name: "name", widget: "string" }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "Type", name: "type", widget: "string", hint: "e.g. First-Time Buyers" }
+          - label: "FAQs"
+            name: "faqs"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "q", widget: "string" }
+              - { label: "Answer", name: "a", widget: "text" }
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Meta Description", name: "seo_desc", widget: "text" }
+
+  # ── CITY PAGES ──────────────────────────────────────────────────────────────
+  - name: "cities"
+    label: "City Pages"
+    label_singular: "City Page"
+    folder: "_cities"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "City Name", name: "title", widget: "string" }
+      - { label: "Hero Headline", name: "hero_h1", widget: "string" }
+      - { label: "Market Overview (200-250 words)", name: "market_overview", widget: "markdown" }
+      - { label: "Price Range - Condos", name: "price_condo", widget: "string" }
+      - { label: "Price Range - Detached", name: "price_detached", widget: "string" }
+      - { label: "Investment Notes", name: "investor_notes", widget: "text" }
+      - label: "FAQs"
+        name: "faqs"
+        widget: "list"
+        fields:
+          - { label: "Question", name: "q", widget: "string" }
+          - { label: "Answer", name: "a", widget: "text" }
+      - { label: "SEO Title", name: "seo_title", widget: "string" }
+      - { label: "SEO Meta Description", name: "seo_desc", widget: "text" }
+
+  # ── ABOUT PAGE ──────────────────────────────────────────────────────────────
+  - name: "about"
+    label: "About Page"
+    files:
+      - label: "About Page Content"
+        name: "about"
+        file: "_data/about.json"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Bio Paragraph 1", name: "bio1", widget: "text" }
+          - { label: "Bio Paragraph 2", name: "bio2", widget: "text" }
+          - { label: "Bio Paragraph 3", name: "bio3", widget: "text" }
+          - { label: "Agent Photo", name: "photo", widget: "image", required: false }
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Meta Description", name: "seo_desc", widget: "text" }
+
+  # ── SITE SETTINGS ──────────────────────────────────────────────────────────
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "General Settings"
+        name: "general"
+        file: "_data/settings.json"
+        fields:
+          - { label: "Business Name", name: "business_name", widget: "string" }
+          - { label: "Phone Number", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string" }
+          - { label: "Office Address", name: "address", widget: "text" }
+          - { label: "Google Analytics ID (e.g. G-XXXXXXXXXX)", name: "ga_id", widget: "string", required: false }
+          - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+          - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }

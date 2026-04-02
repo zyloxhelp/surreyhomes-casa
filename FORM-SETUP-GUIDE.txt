@@ -1,0 +1,50 @@
+
+════════════════════════════════════════════════════════════════
+ SURREY HOMES — FORM SETUP GUIDE
+════════════════════════════════════════════════════════════════
+
+Forms will send leads to TWO places:
+1. GHL CRM → Contacts (auto-created)
+2. Netlify Forms → Dashboard + Email notification
+
+════════════════════════════════════════════════════════════════
+ NETLIFY EMAIL NOTIFICATIONS SETUP (5 minutes)
+════════════════════════════════════════════════════════════════
+
+After deploying the new ZIP:
+
+1. Go to: app.netlify.com → Your Site → Forms
+   → You'll see: consultation-form, modal-consultation, rental-inquiry
+
+2. Click on any form → "Form notifications"
+   → Add notification → Email notification
+   → Email: info@abhirairealtor.com
+   → Save
+
+3. Repeat for all 3 forms
+
+Now every submission → Email to info@abhirairealtor.com instantly!
+
+════════════════════════════════════════════════════════════════
+ GHL CRM — LEADS APPEAR HERE
+════════════════════════════════════════════════════════════════
+
+GHL Dashboard → Contacts → filter by tag "website-lead"
+
+Each lead will have:
+- Name, Email, Phone
+- Service interest (Buy/Sell/Rent/Invest)
+- Message
+- Page they submitted from
+- Tag: "website-lead"
+
+════════════════════════════════════════════════════════════════
+ TESTING
+════════════════════════════════════════════════════════════════
+
+1. Submit test form on surreyhomes.casa
+2. Check GHL → Contacts → new contact appears
+3. Check email → notification received
+4. Check Netlify → Forms → submission logged
+
+════════════════════════════════════════════════════════════════

@@ -1,0 +1,193 @@
+# Surrey Homes Real Estate — Netlify Redirects
+
+# Core pages
+/  /index.html  200
+/buyers-guide  /buyers-guide.html  200
+/sellers-guide  /sellers-guide.html  200
+/about  /about.html  200
+/contact  /contact.html  200
+/free-home-evaluation  /free-home-evaluation.html  200
+/privacy-policy  /privacy-policy.html  200
+/terms  /terms.html  200
+/blog  /blog/index.html  200
+/sitemap  /sitemap.xml  200
+
+# City pages
+/real-estate-vancouver-bc  /cities/vancouver.html  200
+/real-estate-surrey-bc  /cities/surrey.html  200
+/real-estate-burnaby-bc  /cities/burnaby.html  200
+/real-estate-richmond-bc  /cities/richmond.html  200
+/real-estate-langley-bc  /cities/langley.html  200
+/real-estate-abbotsford-bc  /cities/abbotsford.html  200
+/real-estate-delta-bc  /cities/delta.html  200
+/real-estate-new-westminster-bc  /cities/new-westminster.html  200
+/real-estate-mission-bc  /cities/mission.html  200
+/real-estate-chilliwack-bc  /cities/chilliwack.html  200
+/real-estate-coquitlam-bc  /cities/coquitlam.html  200
+/real-estate-port-coquitlam-bc  /cities/port-coquitlam.html  200
+/real-estate-port-moody-bc  /cities/port-moody.html  200
+/real-estate-maple-ridge-bc  /cities/maple-ridge.html  200
+/real-estate-pitt-meadows-bc  /cities/pitt-meadows.html  200
+/real-estate-white-rock-bc  /cities/white-rock.html  200
+/real-estate-tsawwassen-bc  /cities/tsawwassen.html  200
+/real-estate-aldergrove-bc  /cities/aldergrove.html  200
+/real-estate-cloverdale-bc  /cities/cloverdale.html  200
+/real-estate-hope-bc  /cities/hope.html  200
+/real-estate-agassiz-bc  /cities/agassiz.html  200
+
+# Buy pages — Condos
+/condos-for-sale-vancouver-bc  /buy/condos-vancouver.html  200
+/condos-for-sale-surrey-bc  /buy/condos-surrey.html  200
+/condos-for-sale-burnaby-bc  /buy/condos-burnaby.html  200
+/condos-for-sale-richmond-bc  /buy/condos-richmond.html  200
+/condos-for-sale-langley-bc  /buy/condos-langley.html  200
+/condos-for-sale-abbotsford-bc  /buy/condos-abbotsford.html  200
+/condos-for-sale-new-westminster-bc  /buy/condos-new-westminster.html  200
+
+# Buy pages — Townhouses
+/townhouses-for-sale-vancouver-bc  /buy/townhouses-vancouver.html  200
+/townhouses-for-sale-surrey-bc  /buy/townhouses-surrey.html  200
+/townhouses-for-sale-langley-bc  /buy/townhouses-langley.html  200
+/townhouses-for-sale-burnaby-bc  /buy/townhouses-burnaby.html  200
+/townhouses-for-sale-richmond-bc  /buy/townhouses-richmond.html  200
+/townhouses-for-sale-abbotsford-bc  /buy/townhouses-abbotsford.html  200
+/townhouses-for-sale-chilliwack-bc  /buy/townhouses-chilliwack.html  200
+
+# Buy pages — Detached Homes
+/detached-homes-for-sale-vancouver-bc  /buy/detached-homes-vancouver.html  200
+/detached-homes-for-sale-surrey-bc  /buy/detached-homes-surrey.html  200
+/detached-homes-for-sale-langley-bc  /buy/detached-homes-langley.html  200
+/detached-homes-for-sale-burnaby-bc  /buy/detached-homes-burnaby.html  200
+/detached-homes-for-sale-richmond-bc  /buy/detached-homes-richmond.html  200
+/detached-homes-for-sale-delta-bc  /buy/detached-homes-delta.html  200
+/detached-homes-for-sale-abbotsford-bc  /buy/detached-homes-abbotsford.html  200
+/detached-homes-for-sale-mission-bc  /buy/detached-homes-mission.html  200
+/detached-homes-for-sale-chilliwack-bc  /buy/detached-homes-chilliwack.html  200
+
+# Buy pages — Luxury
+/luxury-homes-for-sale-vancouver-bc  /buy/luxury-homes-vancouver.html  200
+/luxury-homes-for-sale-richmond-bc  /buy/luxury-homes-richmond.html  200
+/luxury-homes-for-sale-burnaby-bc  /buy/luxury-homes-burnaby.html  200
+/luxury-homes-for-sale-surrey-bc  /buy/luxury-homes-surrey.html  200
+/luxury-homes-for-sale-langley-bc  /buy/luxury-homes-langley.html  200
+
+# Buy pages — Pre-Sale
+/pre-sale-condos-for-sale-vancouver-bc  /buy/pre-sale-condos-vancouver.html  200
+/pre-sale-condos-for-sale-burnaby-bc  /buy/pre-sale-condos-burnaby.html  200
+/pre-sale-condos-for-sale-surrey-bc  /buy/pre-sale-condos-surrey.html  200
+/pre-sale-condos-for-sale-richmond-bc  /buy/pre-sale-condos-richmond.html  200
+/pre-sale-condos-for-sale-langley-bc  /buy/pre-sale-condos-langley.html  200
+
+# Buy pages — New Homes
+/new-homes-for-sale-surrey-bc  /buy/new-homes-surrey.html  200
+/new-homes-for-sale-langley-bc  /buy/new-homes-langley.html  200
+/new-homes-for-sale-abbotsford-bc  /buy/new-homes-abbotsford.html  200
+/new-homes-for-sale-mission-bc  /buy/new-homes-mission.html  200
+/new-homes-for-sale-chilliwack-bc  /buy/new-homes-chilliwack.html  200
+
+# Buy pages — Investment
+/investment-properties-for-sale-vancouver-bc  /buy/investment-properties-vancouver.html  200
+/investment-properties-for-sale-surrey-bc  /buy/investment-properties-surrey.html  200
+/investment-properties-for-sale-burnaby-bc  /buy/investment-properties-burnaby.html  200
+/investment-properties-for-sale-langley-bc  /buy/investment-properties-langley.html  200
+/investment-properties-for-sale-abbotsford-bc  /buy/investment-properties-abbotsford.html  200
+
+# Sell pages
+/sell-my-home-vancouver-bc  /sell/vancouver.html  200
+/sell-my-home-surrey-bc  /sell/surrey.html  200
+/sell-my-home-burnaby-bc  /sell/burnaby.html  200
+/sell-my-home-richmond-bc  /sell/richmond.html  200
+/sell-my-home-langley-bc  /sell/langley.html  200
+/sell-my-home-abbotsford-bc  /sell/abbotsford.html  200
+/sell-my-home-delta-bc  /sell/delta.html  200
+/sell-my-home-new-westminster-bc  /sell/new-westminster.html  200
+/sell-my-home-mission-bc  /sell/mission.html  200
+/sell-my-home-chilliwack-bc  /sell/chilliwack.html  200
+
+# Blog posts
+/blog/first-time-home-buyer-guide-bc-2025  /blog/first-time-home-buyer-guide-bc-2025.html  200
+/blog/property-transfer-tax-bc-explained  /blog/property-transfer-tax-bc-explained.html  200
+/blog/strata-fees-bc-what-buyers-need-to-know  /blog/strata-fees-bc-what-buyers-need-to-know.html  200
+/blog/fraser-valley-real-estate-market-report-2025  /blog/fraser-valley-real-estate-market-report-2025.html  200
+/blog/how-to-sell-home-fast-bc  /blog/how-to-sell-home-fast-bc.html  200
+/blog/bc-mortgage-guide-how-much-can-you-afford  /blog/bc-mortgage-guide-how-much-can-you-afford.html  200
+/blog/best-neighbourhoods-surrey-bc-2025  /blog/best-neighbourhoods-surrey-bc-2025.html  200
+/blog/investing-in-pre-sales-bc-risks-and-rewards  /blog/investing-in-pre-sales-bc-risks-and-rewards.html  200
+/blog/downsizing-bc-complete-guide  /blog/downsizing-bc-complete-guide.html  200
+/blog/buying-investment-property-bc-complete-guide  /blog/buying-investment-property-bc-complete-guide.html  200
+
+# Neighbourhood pages
+/homes-kitsilano-vancouver-bc  /neighbourhoods/kitsilano-vancouver.html  200
+/homes-yaletown-vancouver-bc  /neighbourhoods/yaletown-vancouver.html  200
+/homes-east-vancouver-bc  /neighbourhoods/east-vancouver-vancouver.html  200
+/homes-west-end-vancouver-bc  /neighbourhoods/west-end-vancouver.html  200
+/homes-mount-pleasant-vancouver-bc  /neighbourhoods/mount-pleasant-vancouver.html  200
+/homes-kerrisdale-vancouver-bc  /neighbourhoods/kerrisdale-vancouver.html  200
+/homes-steveston-richmond-bc  /neighbourhoods/steveston-richmond.html  200
+/homes-city-centre-richmond-bc  /neighbourhoods/city-centre-richmond.html  200
+/homes-broadmoor-richmond-bc  /neighbourhoods/broadmoor-richmond.html  200
+/homes-metrotown-burnaby-bc  /neighbourhoods/metrotown-burnaby.html  200
+/homes-brentwood-burnaby-bc  /neighbourhoods/brentwood-burnaby.html  200
+/homes-highgate-burnaby-bc  /neighbourhoods/highgate-burnaby.html  200
+/homes-south-surrey-bc  /neighbourhoods/south-surrey-bc.html  200
+/homes-fleetwood-surrey-bc  /neighbourhoods/fleetwood-surrey.html  200
+/homes-newton-surrey-bc  /neighbourhoods/newton-surrey.html  200
+/homes-guildford-surrey-bc  /neighbourhoods/guildford-surrey.html  200
+/homes-whalley-surrey-bc  /neighbourhoods/whalley-surrey.html  200
+/homes-willoughby-langley-bc  /neighbourhoods/willoughby-langley.html  200
+/homes-walnut-grove-langley-bc  /neighbourhoods/walnut-grove-langley.html  200
+/homes-fort-langley-bc  /neighbourhoods/fort-langley-langley.html  200
+/homes-west-abbotsford-bc  /neighbourhoods/west-abbotsford-bc.html  200
+/homes-clearbrook-abbotsford-bc  /neighbourhoods/clearbrook-abbotsford.html  200
+/homes-ladner-delta-bc  /neighbourhoods/ladner-delta.html  200
+/homes-tsawwassen-delta-bc  /neighbourhoods/tsawwassen-delta-bc.html  200
+/homes-north-delta-bc  /neighbourhoods/north-delta-bc.html  200
+/homes-queensborough-new-westminster-bc  /neighbourhoods/queensborough-new-westminster.html  200
+/homes-sapperton-new-westminster-bc  /neighbourhoods/sapperton-new-westminster.html  200
+/homes-vedder-crossing-chilliwack-bc  /neighbourhoods/vedder-crossing-chilliwack.html  200
+/homes-yarrow-chilliwack-bc  /neighbourhoods/yarrow-chilliwack.html  200
+/homes-promontory-chilliwack-bc  /neighbourhoods/promontory-chilliwack.html  200
+/homes-silverdale-mission-bc  /neighbourhoods/silverdale-mission.html  200
+/homes-burke-mountain-coquitlam-bc  /neighbourhoods/burke-mountain-coquitlam.html  200
+/homes-westwood-plateau-coquitlam-bc  /neighbourhoods/westwood-plateau-coquitlam.html  200
+/homes-heritage-mountain-port-moody-bc  /neighbourhoods/heritage-mountain-port-moody.html  200
+/homes-silver-valley-maple-ridge-bc  /neighbourhoods/silver-valley-maple-ridge.html  200
+/homes-albion-maple-ridge-bc  /neighbourhoods/albion-maple-ridge.html  200
+/homes-east-beach-white-rock-bc  /neighbourhoods/east-beach-white-rock.html  200
+/homes-west-beach-white-rock-bc  /neighbourhoods/west-beach-white-rock.html  200
+/homes-central-pitt-meadows-bc  /neighbourhoods/central-pitt-meadows.html  200
+
+# Fallback
+/*  /index.html  404
+
+# Listings / Video pages
+/listings  /listings/index.html  200
+/listings/just-listed-condo-willoughby-langley-bc  /listings/just-listed-condo-willoughby-langley-bc.html  200
+/listings/presale-townhouse-langley-bc  /listings/presale-townhouse-langley-bc.html  200
+/listings/victory-by-maskeen-presale-condo-langley-bc  /listings/victory-by-maskeen-presale-condo-langley-bc.html  200
+/listings/new-listing-commercial-downtown-surrey-bc  /listings/new-listing-commercial-downtown-surrey-bc.html  200
+
+# Rental pages
+/rental-guide  /rental-guide.html  200
+/rent-in-surrey-bc  /rent/surrey.html  200
+/rent-in-vancouver-bc  /rent/vancouver.html  200
+/rent-in-burnaby-bc  /rent/burnaby.html  200
+/rent-in-richmond-bc  /rent/richmond.html  200
+/rent-in-langley-bc  /rent/langley.html  200
+/rent-in-abbotsford-bc  /rent/abbotsford.html  200
+/rent-in-coquitlam-bc  /rent/coquitlam.html  200
+/rent-in-new-westminster-bc  /rent/new-westminster.html  200
+/rent-in-mission-bc  /rent/mission.html  200
+/rent-in-chilliwack-bc  /rent/chilliwack.html  200
+/blog/metro-vancouver-real-estate-market-update-march-2026  /blog/metro-vancouver-real-estate-market-update-march-2026.html  200
+/blog/first-time-buyer-programs-bc-2026-updated  /blog/first-time-buyer-programs-bc-2026-updated.html  200
+/blog/surrey-langley-skytrain-real-estate-2026  /blog/surrey-langley-skytrain-real-estate-2026.html  200
+
+/testimonials  /testimonials.html  200
+
+/privacy  /privacy-policy.html  200
+/testimonials  /about.html  200
+/faq  /buyers-guide.html  200
+/home-evaluation  /free-home-evaluation.html  200
+/evaluation  /free-home-evaluation.html  200
+/blog/index  /blog/index.html  200
