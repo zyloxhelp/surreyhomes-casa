@@ -51,9 +51,15 @@ const obs = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.08 });
 
-document.querySelectorAll('.card, .step-card, .testi, .city-card, .prop-card').forEach(el => {
-  el.style.cssText = 'opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease';
-  obs.observe(el);
+// Only animate elements that are NOT in the initial viewport
+const allAnimatable = document.querySelectorAll('.card, .step-card, .testi, .city-card, .prop-card');
+allAnimatable.forEach(el => {
+  const rect = el.getBoundingClientRect();
+  // Skip elements already visible on page load
+  if (rect.top > window.innerHeight) {
+    el.style.cssText = 'opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease';
+    obs.observe(el);
+  }
 });
 
 // NOTE: Form submissions handled by ghl-forms.js — DO NOT add form handlers here

@@ -112,13 +112,51 @@
   <a href="/contact" onclick="closeMob()" class="mob-cta">Book a Call</a>
 </div></div></div>
 
+<!-- HERO SECTION -->
+<section style="background:linear-gradient(135deg,var(--navy-d) 0%,var(--navy) 55%,var(--navy-l) 100%);padding:7rem 0 5rem;margin-top:0;overflow:hidden;position:relative;">
+  <div style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80') center/cover no-repeat;opacity:.08;"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div style="display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;" class="about-split">
+      <div>
+        <span class="tag" style="margin-bottom:1.25rem;">Metro Vancouver &amp; Fraser Valley BC</span>
+        <h1 style="color:#fff;font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.15;margin-bottom:1.25rem;text-shadow:0 2px 16px rgba(0,0,0,.3);">
+          Find Your Perfect Home<br>in <span style="color:var(--gold);">Metro Vancouver &amp; Fraser Valley</span>
+        </h1>
+        <p style="color:rgba(255,255,255,.75);font-size:1.05rem;max-width:540px;line-height:1.8;margin-bottom:2rem;">
+          Licensed REALTOR® Abhirai Arora — 10+ years, 200+ happy clients, 21 cities. Expert guidance for buyers, sellers &amp; investors. Free consultation, 45-minute response.
+        </p>
+        <div class="hero-btns" style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="/contact" class="btn btn-gold" style="font-size:.95rem;padding:.9rem 2rem;">Book Free Consultation ›</a>
+          <a href="/buyers-guide" class="btn btn-outline" style="font-size:.95rem;padding:.9rem 2rem;">Buyer's Guide</a>
+          <a href="/free-home-evaluation" class="btn btn-outline" style="font-size:.95rem;padding:.9rem 2rem;">Free Evaluation</a>
+        </div>
+        <div class="hero-stats" style="display:flex;gap:2.5rem;margin-top:2.5rem;flex-wrap:wrap;">
+          <div><div style="font-family:var(--ff-h);font-size:2rem;font-weight:700;color:#fff;line-height:1;">200+</div><div style="font-size:.72rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.8px;margin-top:.2rem;">Happy Clients</div></div>
+          <div><div style="font-family:var(--ff-h);font-size:2rem;font-weight:700;color:#fff;line-height:1;">10+</div><div style="font-size:.72rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.8px;margin-top:.2rem;">Years Experience</div></div>
+          <div><div style="font-family:var(--ff-h);font-size:2rem;font-weight:700;color:#fff;line-height:1;">21</div><div style="font-size:.72rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.8px;margin-top:.2rem;">Cities Covered</div></div>
+          <div><div style="font-family:var(--ff-h);font-size:2rem;font-weight:700;color:#fff;line-height:1;">45m</div><div style="font-size:.72rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.8px;margin-top:.2rem;">Response Time</div></div>
+        </div>
+      </div>
+      <div class="banner-agent" style="display:none;">
+        <picture>
+          <source srcset="/assets/images/agent-hero.webp" type="image/webp">
+          <img src="/assets/images/agent-hero.png" alt="Abhirai Arora — Licensed REALTOR® Metro Vancouver BC"
+               style="height:320px;width:auto;object-fit:cover;object-position:top;border-radius:16px;box-shadow:0 24px 64px rgba(0,0,0,.4);border:3px solid rgba(201,168,76,.35);"
+               loading="eager" width="240" height="320">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+<style>@media(min-width:860px){.banner-agent{display:block!important;}}</style>
+
 <!-- AGENT SHOWCASE -->
 <section style="background:var(--cream);padding:5rem 0;overflow:hidden;">
 <div class="container">
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;" class="about-split">
   <div style="position:relative;">
     <picture>
-      <source srcset="/assets/images/agent-hero.webp" type="image/webp" type="image/webp">
+      <source srcset="/assets/images/agent-hero.webp" type="image/webp">
       <img src="/assets/images/agent-hero.png" alt="Abhirai Arora — Licensed REALTOR® Metro Vancouver & Fraser Valley BC" style="width:100%;max-width:420px;border-radius:20px;box-shadow:0 24px 64px rgba(26,26,46,.18);display:block;position:relative;z-index:1;border:4px solid rgba(201,168,76,.2);" loading="eager" width="420" height="660" style="width:100%;max-width:420px;border-radius:20px;box-shadow:0 24px 64px rgba(26,26,46,.18);display:block;position:relative;z-index:1;border:4px solid rgba(201,168,76,.25);">
     </picture>
     <div style="position:absolute;bottom:1.5rem;right:-1rem;background:var(--gold);color:var(--navy);padding:1rem 1.5rem;border-radius:14px;box-shadow:0 8px 24px rgba(201,168,76,.4);z-index:2;">
@@ -128,7 +166,7 @@
   </div>
   <div>
     <span class="tag">Your REALTOR®</span>
-    <h2 style="color:var(--navy);margin-bottom:1rem;">Abhirai Arora<br><span style="color:var(--gold);font-size:.75em;">Licensed REALTOR®</span></h2>
+    <h2 style="color:var(--navy);margin-bottom:1rem;">Abhirai Arora<span style="display:block;color:var(--gold);font-size:.6em;font-weight:500;margin-top:.3rem;letter-spacing:.5px;">Licensed REALTOR®</span></h2>
     <p style="color:var(--slate);line-height:1.85;margin-bottom:1rem;">With 10+ years in Metro Vancouver, I've helped 200+ buyers, sellers, and investors navigate BC's real estate market. I cover 21 cities across Metro Vancouver and Fraser Valley — because great opportunities don't respect city limits.</p>
     <p style="color:var(--slate);line-height:1.85;margin-bottom:1.75rem;">Fluent in English, Hindi, and Punjabi. 45-minute response guarantee. Licensed by BC Financial Services Authority (BCFSA).</p>
     <div style="display:flex;gap:.85rem;flex-wrap:wrap;">

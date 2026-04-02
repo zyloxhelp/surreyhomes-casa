@@ -15,7 +15,7 @@
   --sh-md:0 8px 32px rgba(26,26,46,.13);
   --sh-lg:0 16px 56px rgba(26,26,46,.16);
   --sh-xl:0 24px 80px rgba(26,26,46,.20);
-  --r:12px;--r-sm:6px;--r-lg:20px;--r-xl:28px;
+  --r:12px;--r-sm:6px;--r-lg:20px;--r-xl:28px;--radius:12px;--red:#C9A84C;--gray:#4A4A6A;--bg:#F5F0E8;--line:rgba(201,168,76,.2);--text:#1A1A2E;--red2:#a8883c;
   --tr:all .22s cubic-bezier(.4,0,.2,1);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
