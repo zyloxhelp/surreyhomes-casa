@@ -332,3 +332,74 @@ section[style*="min-height:340px"] .container,
     padding-right: 3rem !important;
   }
 }
+
+/* ── MOBILE FIXES ── */
+
+/* Fix floating CTA on mobile */
+#floatCTA { white-space:nowrap; }
+@media(max-width:480px){
+  #floatCTA { flex-direction:column; align-items:center; gap:.5rem; width:90vw!important; }
+  #floatCTA .btn { width:100%; justify-content:center; font-size:.82rem; padding:.6rem 1rem; }
+}
+
+/* Fix stats bar mobile */
+@media(max-width:600px){
+  .stats-bar-inner { gap:1.25rem!important; }
+  .stats-bar-inner > div { flex:1 1 calc(50% - 1rem); }
+}
+
+/* Fix banner agent photo - show small version on mobile */
+@media(max-width:767px){
+  .banner-agent { display:none!important; }
+  section[style*="min-height:340px"] { min-height:280px!important; padding:5.5rem 0 2.5rem!important; }
+}
+
+/* Fix two-col sections on mobile */
+@media(max-width:768px){
+  .two-col, .blog-layout, .about-split { grid-template-columns:1fr!important; }
+  aside { position:static!important; }
+}
+
+/* Fix hero buttons mobile */
+@media(max-width:600px){
+  .hero-btns { flex-direction:column; align-items:flex-start; gap:.6rem; }
+  .hero-btns .btn { width:100%; max-width:320px; justify-content:center; }
+  .hero-stats { gap:1rem!important; }
+  .hero-stat .num { font-size:1.4rem; }
+}
+
+/* Fix nav on mobile - ensure hamburger visible */
+@media(max-width:768px){
+  .desktop-nav { display:none!important; }
+  .hamburger { display:flex!important; }
+}
+
+/* Fix grid on mobile */
+@media(max-width:600px){
+  .grid-3, .grid-4 { grid-template-columns:1fr!important; }
+}
+@media(min-width:601px) and (max-width:900px){
+  .grid-3 { grid-template-columns:repeat(2,1fr)!important; }
+  .grid-4 { grid-template-columns:repeat(2,1fr)!important; }
+}
+
+/* Fix form-box on mobile */
+@media(max-width:768px){
+  .lead-split { grid-template-columns:1fr!important; }
+  .f2 { grid-template-columns:1fr!important; }
+}
+
+/* Fix footer on mobile */
+@media(max-width:768px){
+  .footer-main { grid-template-columns:1fr!important; }
+}
+
+/* Blog sidebar mobile */
+@media(max-width:768px){
+  .blog-layout aside { order:-1; }
+}
+
+/* Desktop - hero full width centered */
+@media(min-width:769px){
+  .hero-inner { justify-content:flex-start; }
+}
