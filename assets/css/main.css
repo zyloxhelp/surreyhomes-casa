@@ -69,6 +69,16 @@ p{color:var(--slate);line-height:1.8;font-size:1rem}
   padding:.3rem 1rem;border-radius:50px;margin-bottom:.85rem;
   border:1.5px solid rgba(15,90,135,.3)}
 
+/* Tag on dark/navy backgrounds — gold color, visible border */
+[style*="background:var(--navy)"] .tag,
+[style*="background:var(--navy-d)"] .tag,
+[style*="background:linear-gradient"] .tag,
+[style*="135deg,var(--navy"] .tag{
+  background:rgba(201,168,76,.15);
+  color:var(--gold);
+  border-color:rgba(201,168,76,.5)
+}
+
 /* ── BUTTONS ──────────────────────────────────── */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
   padding:.8rem 1.75rem;border-radius:var(--r-sm);font-family:var(--ff-b);
