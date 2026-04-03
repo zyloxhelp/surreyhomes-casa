@@ -420,3 +420,47 @@ footer{background:var(--navy);padding:4rem 0 0;border-top:4px solid var(--gold)}
   section[style*="min-height:340px"] .container,
   .page-hero .container{padding-left:40px!important;padding-right:40px!important}
 }
+
+/* ── WHITE TEXT ON DARK BACKGROUNDS (auto-cascade) ── */
+[style*="background:var(--navy)"] h1,
+[style*="background:var(--navy)"] h2,
+[style*="background:var(--navy)"] h3,
+[style*="background:var(--navy)"] h4,
+[style*="background:var(--navy)"] h5,
+[style*="background:var(--navy-d)"] h1,
+[style*="background:var(--navy-d)"] h2,
+[style*="background:var(--navy-d)"] h3,
+[style*="background:var(--navy-d)"] h4,
+[style*="background:var(--navy-l)"] h2,
+[style*="background:var(--navy-l)"] h3,
+[style*="background:linear-gradient"] h1,
+[style*="background:linear-gradient"] h2,
+[style*="background:linear-gradient"] h3,
+[style*="background:linear-gradient"] h4,
+.cit-sec h1,.cit-sec h2,.cit-sec h3,.cit-sec h4,
+.cta-banner h1,.cta-banner h2,.cta-banner h3{ color:#fff !important }
+
+[style*="background:var(--navy)"] p,
+[style*="background:var(--navy)"] li,
+[style*="background:var(--navy)"] span,
+[style*="background:var(--navy)"] label,
+[style*="background:var(--navy-d)"] p,
+[style*="background:var(--navy-d)"] li,
+[style*="background:linear-gradient"] p,
+[style*="background:linear-gradient"] li,
+.cit-sec p,.cit-sec li,.cit-sec span{ color:rgba(255,255,255,.92) }
+
+/* ── SPECIFIC SECTION OVERRIDES ── */
+section[style*="background:var(--navy)"] > .container h1,
+section[style*="background:var(--navy)"] > .container h2,
+section[style*="background:var(--navy)"] > .container h3,
+section[style*="background:var(--navy)"] > .container h4,
+section[style*="background:var(--navy)"] > .container h5{ color:#fff }
+
+section[style*="background:var(--navy)"] > .container p,
+section[style*="background:var(--navy)"] > .container span:not(.tag),
+section[style*="background:var(--navy)"] > .container li{ color:rgba(255,255,255,.92) }
+
+/* Keep gold badges readable (navy text on gold bg) */
+[style*="background:var(--gold)"]{ color:var(--navy) !important }
+.pc-badge{ color:var(--gold) !important }
