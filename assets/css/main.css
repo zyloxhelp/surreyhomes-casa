@@ -332,34 +332,34 @@ section[style*="min-height:340px"] .container,
   margin-top:.15rem;font-weight:400}
 
 /* ── FOOTER ───────────────────────────────────── */
-footer{background:var(--navy);padding:4rem 0 0;border-top:4px solid var(--gold)}
+footer{background:#0a1628;padding:4rem 0 0;border-top:4px solid var(--gold)}
 .footer-main{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;
   gap:3rem;padding-bottom:3rem}
 .footer-brand .logo{margin-bottom:1rem}
-.footer-desc,.fd{color:rgba(255,255,255,.90);font-size:.88rem;
+.footer-desc,.fd{color:#d0dae8;font-size:.88rem;
   line-height:1.75;margin-bottom:.75rem}
 .fsocial{display:flex;gap:.6rem;margin-top:1rem}
 .fsoc,.fsoc-link{width:36px;height:36px;border-radius:50%;
   background:rgba(255,255,255,.1);display:flex;align-items:center;
   justify-content:center;color:rgba(255,255,255,.9);transition:var(--tr)}
 .fsoc:hover,.fsoc-link:hover{background:var(--gold);color:var(--navy)}
-.fc h4,.fc-h4,.footer-h4,.fch4{color:#fff;font-size:.84rem;
+.fc h4,.fc-h4,.footer-h4,.fch4{color:#ffffff;font-size:.82rem;
   font-weight:700;text-transform:uppercase;letter-spacing:1.5px;
   margin-bottom:1rem;font-family:var(--ff-b)}
 .fc ul,.fc-ul,.footer-ul{display:flex;flex-direction:column;gap:.55rem}
-.fc ul li a,.fc-ul li a,.footer-ul li a{color:rgba(255,255,255,.85);
+.fc ul li a,.fc-ul li a,.footer-ul li a{color:#c8d8ec;
   font-size:.88rem;transition:var(--tr)}
 .fc ul li a:hover,.fc-ul li a:hover,.footer-ul li a:hover{color:var(--gold)}
-.fc-p,.footer-p{color:rgba(255,255,255,.90);font-size:.88rem;
+.fc-p,.footer-p{color:#c8d8ec;font-size:.88rem;
   line-height:1.75;margin-bottom:.4rem}
-.fc-p a,.footer-p a{color:rgba(255,255,255,.85);transition:color .2s}
+.fc-p a,.footer-p a{color:#c8d8ec;transition:color .2s}
 .fc-p a:hover,.footer-p a:hover{color:var(--gold)}
 .footer-bot,.fbot{border-top:1px solid rgba(255,255,255,.25);
   padding:1.25rem 0;display:flex;align-items:center;
   justify-content:space-between;flex-wrap:wrap;gap:.75rem}
-.footer-bot p,.fbot p{color:rgba(255,255,255,.78);font-size:.78rem}
+.footer-bot p,.fbot p{color:#8fa5c0;font-size:.78rem}
 .footer-links,.fbl{display:flex;gap:1.25rem}
-.footer-links a,.fbl a{color:rgba(255,255,255,.78);font-size:.78rem;transition:color .2s}
+.footer-links a,.fbl a{color:#8fa5c0;font-size:.78rem;transition:color .2s}
 .footer-links a:hover,.fbl a:hover{color:var(--gold)}
 .fl{display:block;text-decoration:none;margin-bottom:1rem}
 
@@ -464,3 +464,20 @@ section[style*="background:var(--navy)"] > .container li{ color:rgba(255,255,255
 /* Keep gold badges readable (navy text on gold bg) */
 [style*="background:var(--gold)"]{ color:var(--navy) !important }
 .pc-badge{ color:var(--gold) !important }
+
+/* ── FOOTER FORCE WHITE TEXT ── */
+footer h4{color:#fff!important;font-weight:700;
+  border-bottom:1px solid rgba(255,255,255,.2);padding-bottom:.6rem;margin-bottom:1.1rem}
+footer p,footer li,footer span{color:#c8d8ec}
+footer a{color:#c8d8ec;transition:color .2s}
+footer a:hover{color:var(--gold)}
+footer strong{color:#fff}
+footer .fc h4{letter-spacing:1.8px;text-transform:uppercase;font-size:.82rem}
+footer ul li{list-style:none}
+footer ul li a{font-size:.9rem;display:block;padding:.15rem 0}
+footer ul li a:hover{color:var(--gold);padding-left:5px}
+footer .footer-bot,.footer-bot{border-top:1px solid rgba(255,255,255,.12)}
+footer .footer-bot p,.footer-bot p{color:#8fa5c0!important;font-size:.8rem}
+footer .fbl a,.footer-bot a{color:#8fa5c0!important}
+footer .fbl a:hover,.footer-bot a:hover{color:var(--gold)!important}
+.footer-brand p{color:#c8d8ec!important;font-size:.88rem;line-height:1.75}
