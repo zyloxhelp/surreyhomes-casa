@@ -19,8 +19,17 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon-180x180.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#001E4B">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LV0FDK60WF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LV0FDK60WF');
+</script>
 </head>
 <body>
+<a href="#main-content" class="skip-nav" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
 <header id="hdr"><div class="h-inner"><a href="/" class="logo" style="display:flex;align-items:center;">
   <picture>
     <source srcset="/assets/images/logo-header.webp" type="image/webp">
@@ -31,7 +40,7 @@
 <div class="mob-nav" id="mob"><button class="mob-close" id="mc">✕</button><a href="/buyers-guide" onclick="closeMob()">Buy</a><a href="/rental-guide" onclick="closeMob()">Rent</a><a href="/sellers-guide" onclick="closeMob()">Sell</a><a href="/real-estate-surrey-bc" onclick="closeMob()">Cities</a><a href="/listings" onclick="closeMob()">Listings</a><a href="/blog" onclick="closeMob()">Blog</a><a href="/about" onclick="closeMob()">About</a><a href="/contact" onclick="closeMob()" class="mob-cta">Book a Call</a></div>
 
 <section style="margin-top:75px;background:var(--navy);padding:4rem 0 3rem;">
-  <div class="container">
+  <div class="container" id="main-content">
     <h1 style="color:#fff;margin-bottom:.5rem;">Privacy Policy</h1>
     <p style="color:#fff;font-size:.9rem;">Last updated: January 2026</p>
   </div>

@@ -1,3 +1,8 @@
+
+// GHL Config
+const GHL_TOKEN = 'pit-6e10658c-8903-4db0-9f7f-c6ec2d4a3728';
+const GHL_LOC   = 'mfjOQXgc3G64dTDYevkh';
+const GHL_WF    = '04f882c6-ce3c-4c04-b3cd-72637be2ac9d';
 // Surrey Homes — Main JS
 
 // Header scroll

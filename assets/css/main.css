@@ -37,7 +37,7 @@
 /* ── RESET ────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:16px}
-body{font-family:var(--ff-b);color:var(--slate);background:#fff;
+body{font-family:var(--ff-b);color:var(--slate);background:#fff;text-rendering:optimizeLegibility;
   line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit;text-decoration:none}
@@ -491,3 +491,5 @@ footer .footer-bot p,.footer-bot p{color:#8fa5c0!important;font-size:.8rem}
 footer .fbl a,.footer-bot a{color:#8fa5c0!important}
 footer .fbl a:hover,.footer-bot a:hover{color:var(--gold)!important}
 .footer-brand p{color:#c8d8ec!important;font-size:.88rem;line-height:1.75}
+
+.skip-nav:focus{left:1rem;top:1rem;width:auto;height:auto;overflow:visible;padding:.5rem 1rem;background:var(--navy);color:#fff;border-radius:4px;z-index:9999;}
