@@ -336,30 +336,30 @@ footer{background:var(--navy);padding:4rem 0 0;border-top:4px solid var(--gold)}
 .footer-main{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;
   gap:3rem;padding-bottom:3rem}
 .footer-brand .logo{margin-bottom:1rem}
-.footer-desc,.fd{color:rgba(255,255,255,.62);font-size:.88rem;
+.footer-desc,.fd{color:rgba(255,255,255,.90);font-size:.88rem;
   line-height:1.75;margin-bottom:.75rem}
 .fsocial{display:flex;gap:.6rem;margin-top:1rem}
 .fsoc,.fsoc-link{width:36px;height:36px;border-radius:50%;
   background:rgba(255,255,255,.1);display:flex;align-items:center;
-  justify-content:center;color:rgba(255,255,255,.7);transition:var(--tr)}
+  justify-content:center;color:rgba(255,255,255,.9);transition:var(--tr)}
 .fsoc:hover,.fsoc-link:hover{background:var(--gold);color:var(--navy)}
-.fc h4,.fc-h4,.footer-h4,.fch4{color:#fff;font-size:.8rem;
+.fc h4,.fc-h4,.footer-h4,.fch4{color:#fff;font-size:.84rem;
   font-weight:700;text-transform:uppercase;letter-spacing:1.5px;
   margin-bottom:1rem;font-family:var(--ff-b)}
 .fc ul,.fc-ul,.footer-ul{display:flex;flex-direction:column;gap:.55rem}
-.fc ul li a,.fc-ul li a,.footer-ul li a{color:rgba(255,255,255,.58);
+.fc ul li a,.fc-ul li a,.footer-ul li a{color:rgba(255,255,255,.85);
   font-size:.88rem;transition:var(--tr)}
 .fc ul li a:hover,.fc-ul li a:hover,.footer-ul li a:hover{color:var(--gold)}
-.fc-p,.footer-p{color:rgba(255,255,255,.62);font-size:.88rem;
+.fc-p,.footer-p{color:rgba(255,255,255,.90);font-size:.88rem;
   line-height:1.75;margin-bottom:.4rem}
-.fc-p a,.footer-p a{color:rgba(255,255,255,.62);transition:color .2s}
+.fc-p a,.footer-p a{color:rgba(255,255,255,.85);transition:color .2s}
 .fc-p a:hover,.footer-p a:hover{color:var(--gold)}
-.footer-bot,.fbot{border-top:1px solid rgba(255,255,255,.12);
+.footer-bot,.fbot{border-top:1px solid rgba(255,255,255,.25);
   padding:1.25rem 0;display:flex;align-items:center;
   justify-content:space-between;flex-wrap:wrap;gap:.75rem}
-.footer-bot p,.fbot p{color:rgba(255,255,255,.42);font-size:.78rem}
+.footer-bot p,.fbot p{color:rgba(255,255,255,.78);font-size:.78rem}
 .footer-links,.fbl{display:flex;gap:1.25rem}
-.footer-links a,.fbl a{color:rgba(255,255,255,.42);font-size:.78rem;transition:color .2s}
+.footer-links a,.fbl a{color:rgba(255,255,255,.78);font-size:.78rem;transition:color .2s}
 .footer-links a:hover,.fbl a:hover{color:var(--gold)}
 .fl{display:block;text-decoration:none;margin-bottom:1rem}
 
