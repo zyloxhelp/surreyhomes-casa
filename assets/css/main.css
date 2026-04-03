@@ -190,7 +190,7 @@ section[style*="min-height:340px"] .container,
   border-radius:10px;padding:1rem;text-align:center;transition:var(--tr)}
 .ci:hover{background:rgba(15,90,135,.28);border-color:var(--gold);transform:translateY(-3px)}
 .cn{font-weight:700;font-size:.92rem;color:#fff}
-.cs{font-size:.72rem;color:rgba(255,255,255,.5);margin-top:.2rem}
+.cs{font-size:.72rem;color:rgba(255,255,255,.85);margin-top:.2rem}
 
 /* ── PROPERTY CARDS ───────────────────────────── */
 .prop-card,.pc{background:#fff;border-radius:var(--r);overflow:hidden;
@@ -328,7 +328,7 @@ section[style*="min-height:340px"] .container,
   padding:.85rem .6rem;text-align:center;color:#fff;
   font-size:.83rem;font-weight:600;transition:all .2s}
 .cp:hover{background:rgba(15,90,135,.3);border-color:var(--gold);transform:translateY(-2px)}
-.cp small{display:block;font-size:.65rem;color:rgba(255,255,255,.45);
+.cp small{display:block;font-size:.65rem;color:rgba(255,255,255,.80);
   margin-top:.15rem;font-weight:400}
 
 /* ── FOOTER ───────────────────────────────────── */
