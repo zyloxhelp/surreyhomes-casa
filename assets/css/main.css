@@ -282,6 +282,10 @@ section[style*="min-height:340px"] .container,
 .lead-txt h2{color:#fff;margin-bottom:1rem}
 .lead-txt p{color:rgba(255,255,255,.78);line-height:1.85}
 .checks{display:flex;flex-direction:column;gap:.65rem;margin-top:1.5rem}
+.check{display:flex;align-items:center;gap:.75rem;color:#fff;font-size:.92rem;font-weight:500}
+.check::before{content:"✓";display:inline-flex;align-items:center;justify-content:center;
+  width:20px;height:20px;background:var(--gold);color:var(--navy);
+  border-radius:50%;font-size:.72rem;font-weight:700;flex-shrink:0}
 .check-item{display:flex;align-items:center;gap:.7rem;
   color:rgba(255,255,255,.9);font-size:.9rem}
 .check-icon{width:22px;height:22px;background:var(--gold);border-radius:50%;
