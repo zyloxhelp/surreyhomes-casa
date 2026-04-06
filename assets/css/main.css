@@ -156,6 +156,10 @@ p{color:var(--slate);line-height:1.8;font-size:1rem}
 .banner-agent{display:none}
 .hero-btns{display:flex;gap:.85rem;flex-wrap:wrap}
 section[style*="min-height:340px"] .container,
+.page-hero{background:linear-gradient(135deg,var(--navy-d) 0%,var(--navy) 60%,var(--navy-l) 100%);padding:5rem 0 3.5rem;position:relative;overflow:hidden}
+.page-hero h1,.page-hero h2,.page-hero h3{color:#fff}
+.page-hero p{color:rgba(255,255,255,.9)}
+.page-hero .tag{color:var(--gold)!important;background:rgba(201,168,76,.15)!important;border-color:rgba(201,168,76,.4)!important}
 .page-hero .container{padding-left:2rem;padding-right:2rem}
 
 /* ── STATS BAR ────────────────────────────────── */
