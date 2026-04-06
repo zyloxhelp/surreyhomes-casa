@@ -111,7 +111,7 @@ p{color:var(--slate);line-height:1.8;font-size:1rem}
 .h-inner{max-width:1180px;margin:0 auto;padding:0 1.5rem;
   height:95px;display:flex;align-items:center;
   justify-content:space-between;gap:1.5rem}
-.desktop-nav{display:flex;align-items:center;gap:.1rem}
+.desktop-nav{display:flex;align-items:center;gap:.3rem}
 .desktop-nav a{color:var(--navy);font-size:.88rem;font-weight:600;
   padding:.45rem .85rem;border-radius:6px;transition:var(--tr);
   border-bottom:2px solid transparent}
