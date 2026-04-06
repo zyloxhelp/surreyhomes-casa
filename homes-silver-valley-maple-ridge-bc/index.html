@@ -8,7 +8,7 @@
 <meta property="og:title" content="Homes in Silver Valley Maple Ridge BC | Real Estate Guide | Abhir">
 <meta property="og:description" content="Real estate guide for Silver Valley Maple Ridge, BC. Home prices, neighbourhood insights, and expert guidance from REALTOR® Abhirai Arora.">
 <meta property="og:type" content="website">
-<link rel="canonical" href="https://surreyhomes.casa/homes-silver-valley-maple-ridge-bc">
+<link rel="canonical" href="https://propertiesforsaleinbc.ca/homes-silver-valley-maple-ridge-bc">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/css/main.css">
   <!-- Google Analytics GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LV0FDK60WF"></script>
@@ -21,16 +21,16 @@
       'cookie_flags': 'SameSite=None;Secure'
     });
   </script>
-  <meta property="og:image" content="https://surreyhomes.casa/assets/images/og-image.jpg">
-  <meta property="og:url" content="https://surreyhomes.casa/homes-silver-valley-maple-ridge-bc">
+  <meta property="og:image" content="https://propertiesforsaleinbc.ca/assets/images/og-image.jpg">
+  <meta property="og:url" content="https://propertiesforsaleinbc.ca/homes-silver-valley-maple-ridge-bc">
   <meta property="og:site_name" content="Surrey Homes Real Estate">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Homes in Silver Valley Maple Ridge BC | Real Estate Guide">
   <meta name="twitter:description" content="Explore real estate in Silver Valley, Maple Ridge BC. New homes and acreage from $800K–$1.5M. Local expert guidance and free consultation.">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-  {"@type":"ListItem","position":1,"name":"Home","item":"https://surreyhomes.casa"},
-  {"@type":"ListItem","position":2,"name":"Homes in Silver Valley Maple Ridge BC","item":"https://surreyhomes.casa/homes-silver-valley-maple-ridge-bc"}
+  {"@type":"ListItem","position":1,"name":"Home","item":"https://propertiesforsaleinbc.ca"},
+  {"@type":"ListItem","position":2,"name":"Homes in Silver Valley Maple Ridge BC","item":"https://propertiesforsaleinbc.ca/homes-silver-valley-maple-ridge-bc"}
 ]}</script>
 <meta name="robots" content="index,follow">
 <!-- Favicon -->
@@ -223,7 +223,7 @@ function ok(b){if(!b)return;b.textContent="✓ Sent! I'll reply within 45 minute
 async function send(d,b){
   try{
     if(b){b.textContent='Sending...';b.disabled=true;}
-    var r=await fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({locationId:L,firstName:d.fn||'Website',lastName:d.ln||'Lead',email:d.em||'',phone:d.ph||'',address1:d.ad||'',source:'Website surreyhomes.casa',tags:['website-lead']})});
+    var r=await fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({locationId:L,firstName:d.fn||'Website',lastName:d.ln||'Lead',email:d.em||'',phone:d.ph||'',address1:d.ad||'',source:'Website propertiesforsaleinbc.ca',tags:['website-lead']})});
     var j=await r.json();var id=j&&j.contact&&j.contact.id;
     if(id){
       fetch('https://services.leadconnectorhq.com/contacts/'+id+'/notes',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({body:'WEBSITE LEAD\nService:'+d.sv+'\nPage:'+d.pg+'\nAddress:'+d.ad+'\nMsg:'+d.ms+'\nTime:'+new Date().toLocaleString()})}).catch(function(){});

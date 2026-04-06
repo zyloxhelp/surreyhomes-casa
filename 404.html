@@ -17,17 +17,17 @@
   .btn-out{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.3)}
 </style>
 <meta name="description" content="Page not found. Return to Surrey Homes Real Estate — Metro Vancouver BC real estate experts.">
-<link rel="canonical" href="https://surreyhomes.casa/404">
+<link rel="canonical" href="https://propertiesforsaleinbc.ca/404">
 <meta property="og:title" content="404 — Page Not Found | Surrey Homes Real Estate">
 <meta property="og:description" content="404 — Page Not Found | Surrey Homes Real Estate">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://surreyhomes.casa/404">
-<meta property="og:image" content="https://surreyhomes.casa/assets/images/agent-hero.png">
+<meta property="og:url" content="https://propertiesforsaleinbc.ca/404">
+<meta property="og:image" content="https://propertiesforsaleinbc.ca/assets/images/agent-hero.png">
 <meta property="og:site_name" content="Surrey Homes Real Estate">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="404 — Page Not Found | Surrey Homes Real Estate">
 <meta name="twitter:description" content="404 — Page Not Found | Surrey Homes Real Estate">
-<meta property="og:image" content="https://surreyhomes.casa/assets/images/agent-hero.png">
+<meta property="og:image" content="https://propertiesforsaleinbc.ca/assets/images/agent-hero.png">
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
@@ -108,7 +108,7 @@ function ok(b){if(!b)return;b.textContent="✓ Sent! I'll reply within 45 minute
 async function send(d,b){
   try{
     if(b){b.textContent='Sending...';b.disabled=true;}
-    var r=await fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({locationId:L,firstName:d.fn||'Website',lastName:d.ln||'Lead',email:d.em||'',phone:d.ph||'',address1:d.ad||'',source:'Website surreyhomes.casa',tags:['website-lead']})});
+    var r=await fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({locationId:L,firstName:d.fn||'Website',lastName:d.ln||'Lead',email:d.em||'',phone:d.ph||'',address1:d.ad||'',source:'Website propertiesforsaleinbc.ca',tags:['website-lead']})});
     var j=await r.json();var id=j&&j.contact&&j.contact.id;
     if(id){
       fetch('https://services.leadconnectorhq.com/contacts/'+id+'/notes',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({body:'WEBSITE LEAD\nService:'+d.sv+'\nPage:'+d.pg+'\nAddress:'+d.ad+'\nMsg:'+d.ms+'\nTime:'+new Date().toLocaleString()})}).catch(function(){});

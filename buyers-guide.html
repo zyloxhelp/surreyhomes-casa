@@ -8,9 +8,9 @@
 <meta property="og:title" content="BC Home Buyer's Guide 2026 | Abhirai Arora REALTOR®">
 <meta property="og:description" content="Complete guide to buying a home in BC. From pre-approval to keys — expert guidance from REALTOR® Abhirai Arora.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://surreyhomes.casa/buyers-guide">
-<link rel="canonical" href="https://surreyhomes.casa/buyers-guide">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Surrey Homes Real Estate","url":"https://surreyhomes.casa","telephone":"+16048971401","areaServed":"Metro Vancouver and Fraser Valley, BC"}</script>
+<meta property="og:url" content="https://propertiesforsaleinbc.ca/buyers-guide">
+<link rel="canonical" href="https://propertiesforsaleinbc.ca/buyers-guide">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Surrey Homes Real Estate","url":"https://propertiesforsaleinbc.ca","telephone":"+16048971401","areaServed":"Metro Vancouver and Fraser Valley, BC"}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LV0FDK60WF"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LV0FDK60WF');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -562,7 +562,7 @@ function ok(b){if(!b)return;b.textContent="✓ Sent! I'll reply within 45 minute
 async function send(d,b){
   try{
     if(b){b.textContent='Sending...';b.disabled=true;}
-    var r=await fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({locationId:L,firstName:d.fn||'Website',lastName:d.ln||'Lead',email:d.em||'',phone:d.ph||'',source:'Buyers Guide surreyhomes.casa',tags:['buyers-guide','website-lead']})});
+    var r=await fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({locationId:L,firstName:d.fn||'Website',lastName:d.ln||'Lead',email:d.em||'',phone:d.ph||'',source:'Buyers Guide propertiesforsaleinbc.ca',tags:['buyers-guide','website-lead']})});
     var j=await r.json();var id=j&&j.contact&&j.contact.id;
     if(id){
       fetch('https://services.leadconnectorhq.com/contacts/'+id+'/notes',{method:'POST',headers:{'Authorization':'Bearer '+T,'Content-Type':'application/json','Version':'2021-07-28'},body:JSON.stringify({body:'BUYERS GUIDE LEAD\nService:'+d.sv+'\nBudget:'+d.bg+'\nCity:'+d.ct+'\nMsg:'+d.ms+'\nTime:'+new Date().toLocaleString()})}).catch(function(){});
