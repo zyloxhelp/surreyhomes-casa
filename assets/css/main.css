@@ -101,7 +101,7 @@ p{color:var(--slate);line-height:1.8;font-size:1rem}
 
 /* ── LOGO ─────────────────────────────────────── */
 .logo{display:flex;align-items:center;flex-shrink:0;text-decoration:none}
-.logo img{height:62px;width:auto;display:block}
+.logo img{height:85px;width:auto;display:block}
 .footer-brand .logo img{height:85px}
 
 /* ── HEADER — white bg so logo shows clearly ──── */
@@ -109,7 +109,7 @@ p{color:var(--slate);line-height:1.8;font-size:1rem}
   background:#fff;border-bottom:3px solid var(--navy);transition:box-shadow .25s}
 #hdr.scrolled{box-shadow:0 2px 20px rgba(0,30,75,.14)}
 .h-inner{max-width:1180px;margin:0 auto;padding:0 1.5rem;
-  height:78px;display:flex;align-items:center;
+  height:95px;display:flex;align-items:center;
   justify-content:space-between;gap:1.5rem}
 .desktop-nav{display:flex;align-items:center;gap:.1rem}
 .desktop-nav a{color:var(--navy);font-size:.88rem;font-weight:600;
@@ -402,8 +402,8 @@ footer{background:#0a1628;padding:4rem 0 0;border-top:4px solid var(--gold)}
 @media(max-width:768px){
   .desktop-nav{display:none!important}
   .hamburger{display:flex}
-  .h-inner{height:70px}
-  .logo img{height:52px}
+  .h-inner{height:80px}
+  .logo img{height:68px}
   .grid-2,.grid-3,.grid-4,.two-col,.about-split,.lead-split,.blog-layout{
     grid-template-columns:1fr!important}
   .banner-agent{display:none!important}
@@ -423,8 +423,8 @@ footer{background:#0a1628;padding:4rem 0 0;border-top:4px solid var(--gold)}
 }
 @media(max-width:480px){
   html{font-size:15px}
-  .logo img{height:46px}
-  .h-inner{height:65px}
+  .logo img{height:56px}
+  .h-inner{height:72px}
 }
 @media(min-width:601px) and (max-width:900px){
   .grid-3{grid-template-columns:repeat(2,1fr)!important}
